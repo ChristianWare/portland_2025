@@ -17,13 +17,14 @@ const data = [
     id: 3,
     title: "Tech Stack :Next.js",
   },
-  
 ];
 
 const PostHero = () => {
   return (
     <section className={styles.container}>
-      <h2 className={styles.mainHeading}>Latest Projects</h2>
+      <div className={styles.topContent}>
+        <h2 className={styles.mainHeading}>Latest Projects</h2>
+      </div>
       <div className={styles.content}>
         <div className={styles.box}>
           <h2 className={styles.heading}>Project Details</h2>

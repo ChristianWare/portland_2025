@@ -1,6 +1,5 @@
 .container {
   background-color: var(--green);
-  /* border-bottom: 1px solid var(--blueBorder); */
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -10,3 +9,9 @@
   padding-bottom: 30.5rem;
 }
 
+@media screen and (max-width: 968px) {
+ .container {
+  padding-bottom: 0rem;
+  padding: 16rem 0rem;
+ } 
+}

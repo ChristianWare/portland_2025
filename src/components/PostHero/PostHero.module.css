@@ -2,16 +2,18 @@
   background-color: var(--green);
 }
 
+.content,
+.topContent {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr;
+  border-bottom: 1px solid var(--blueBorder);
+}
+
 .mainHeading {
   font-size: 4rem;
   padding: 1.5rem;
-  border-bottom: 1px solid var(--blueBorder);
   text-transform: uppercase;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 2fr;
+  border-right: 1px solid var(--blueBorder);
 }
 
 .box {
@@ -78,6 +80,10 @@
 @media screen and (max-width: 968px) {
   .mainHeading {
     text-align: center;
+  }
+
+  .topContent {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .content {
