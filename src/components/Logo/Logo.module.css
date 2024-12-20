@@ -6,13 +6,13 @@
 }
 
 .span {
-  font-family: var(--EduSocialCondensedMedium);
-  font-size: 2rem;
+  font-family: var(--barlowCondensed);
+  font-size: 2.5rem;
   white-space: nowrap;
 }
 
 .logo {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: var(--blue);
 }

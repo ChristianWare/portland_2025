@@ -56,7 +56,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  font-family: var(--EduSocialCondensedMedium);
+  font-family: var(--barlowCondensed);
 }
 
 h2 {

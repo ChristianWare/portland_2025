@@ -108,7 +108,7 @@
     z-index: 1000;
     padding: 2rem;
     transform-origin: top;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--green);
     transition: all 0.3s ease-in;
     backdrop-filter: blur(5px);
   }
@@ -130,7 +130,7 @@
   }
 
   .navItem {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: -0.2px;
