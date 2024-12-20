@@ -50,7 +50,7 @@ span {
 }
 
 h1 {
-  font-size: 12vw;
+  font-size: 18vw;
   line-height: 1;
   letter-spacing: -6px;
   text-transform: uppercase;
@@ -144,15 +144,14 @@ textarea:focus {
     font-size: 55%;
   }
 
+  h1 {
+    letter-spacing: -2px;
+  }
+
   p {
     font-size: 113.7%;
   }
 
-  /* h1,
-  .span1 {
-    font-size: 6rem;
-    letter-spacing: -0.02em;
-  } */
 }
 
 @media screen and (max-width: 568px) {
