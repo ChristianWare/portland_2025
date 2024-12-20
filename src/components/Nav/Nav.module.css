@@ -110,7 +110,7 @@
     transform-origin: top;
     background-color: var(--green);
     transition: all 0.3s ease-in;
-    backdrop-filter: blur(5px);
+    border-bottom: 1px solid var(--blueBorder);
   }
 
   .navMenu.active {

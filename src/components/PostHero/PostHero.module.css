@@ -1,0 +1,90 @@
+.container {
+  background-color: var(--green);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr;
+}
+
+.box {
+  border-right: 1px solid var(--blueBorder);
+}
+
+.heading {
+  text-transform: uppercase;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--blueBorder);
+}
+
+.listBox {
+  padding: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.listItem {
+  color: var(--blue);
+  font-family: var(--GTAmericaMonoRegular);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  text-decoration: underline;
+}
+
+.readBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--blue);
+}
+
+.link {
+  font-family: var(--GTAmericaMonoRegular);
+  color: var(--blue);
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imgContainer {
+    grid-column: 1 / -1; /* Make this box span the entire width of the grid */
+  }
+
+  .box:nth-child(3) {
+    order: -1; /* Push this box to the top */
+    grid-column: 1 / -1; /* Make it span across both columns */
+    border-bottom: 1px solid var(--blueBorder);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

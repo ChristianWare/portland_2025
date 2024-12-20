@@ -6,14 +6,14 @@ import styles from "./Nav.module.css";
 import Logo from "../Logo/Logo";
 
 const navItems = [
-  { text: "work", href: "/" },
-  { text: "products", href: "/" },
-  { text: "studio", href: "/" },
+  { text: "Projects", href: "/" },
+  { text: "Resume", href: "/" },
+  { text: "About", href: "/" },
 ];
 
 const navItemsii = [
-  { text: "Insights", href: "/" },
-  { text: "Newsletter", href: "/" },
+  { text: "Journal", href: "/" },
+  { text: "Github", href: "/" },
   { text: "Contact", href: "/" },
 ];
 

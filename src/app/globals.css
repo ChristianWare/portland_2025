@@ -50,9 +50,9 @@ span {
 }
 
 h1 {
-  font-size: 15vw;
+  font-size: 12vw;
   line-height: 1;
-  letter-spacing: -7px;
+  letter-spacing: -6px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
@@ -60,10 +60,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6rem;
-  line-height: 0.9;
-  letter-spacing: 0.3px;
-  font-family: var(--EduSocialCondensedMedium);
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: .5px;
+  font-family: var(--barlowCondensed);
 }
 
 h3 {
