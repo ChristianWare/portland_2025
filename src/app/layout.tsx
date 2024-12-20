@@ -1,15 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+import localFont from "next/font/local";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const EduSocialCondensedMedium = localFont({
+  src: "../../public/fonts/EduSocialCondensedMedium.woff2",
+  variable: "--EduSocialCondensedMedium",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const ABCSocialLight = localFont({
+  src: "../../public/fonts/ABCSocialLight.woff2",
+  variable: "--ABCSocialLight",
+  display: "swap",
+});
+
+const GTAmericaMonoRegular = localFont({
+  src: "../../public/fonts/GTAmericaMonoRegular.woff2",
+  variable: "--GTAmericaMonoRegular",
+  display: "swap",
+});
+
+const CigarsLight = localFont({
+  src: "../../public/fonts/CigarsLight.woff2",
+  variable: "--CigarsLight",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,8 +39,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang='en'>
+      <body
+        className={`${EduSocialCondensedMedium.variable} ${ABCSocialLight.variable} ${GTAmericaMonoRegular.variable} ${CigarsLight.variable}`}
+      >
         {children}
       </body>
     </html>
