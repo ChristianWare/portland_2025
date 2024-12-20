@@ -27,7 +27,7 @@ const PostHero = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.box}>
-          <h2 className={styles.heading}>Project Details</h2>
+          <h2 className={styles.heading}>Details</h2>
           <ul className={styles.listBox}>
             {data.map((x) => (
               <li key={x.id} className={styles.listItem}>
