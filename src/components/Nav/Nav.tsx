@@ -53,7 +53,7 @@ function Nav() {
               </li>
             ))}
           </ul>
-          <ul className={styles.navItems}>
+          <ul className={styles.navItemsii}>
             {navItemsii.map((navItem, index) => (
               <li
                 key={index}

@@ -50,11 +50,12 @@ span {
 }
 
 h1 {
-  font-size: 14.7vw;
+  font-size: 15vw;
   line-height: 1;
-  letter-spacing: -5px;
+  letter-spacing: -7px;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 400;
   font-family: var(--EduSocialCondensedMedium);
 }
 
