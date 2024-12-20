@@ -51,7 +51,7 @@ span {
 
 h1 {
   font-size: 12vw;
-  line-height: 1;
+  line-height: .85;
   letter-spacing: -6px;
   text-transform: uppercase;
   text-align: center;
