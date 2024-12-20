@@ -2,6 +2,13 @@
   background-color: var(--green);
 }
 
+.mainHeading {
+  font-size: 4rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--blueBorder);
+  text-transform: uppercase;
+}
+
 .content {
   display: grid;
   grid-template-columns: 1fr 1.5fr 2fr;
@@ -30,8 +37,9 @@
 .listItem {
   color: var(--blue);
   font-family: var(--GTAmericaMonoRegular);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .listItem:hover {
@@ -68,6 +76,10 @@
 }
 
 @media screen and (max-width: 968px) {
+  .mainHeading {
+    text-align: center;
+  }
+
   .content {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -7,36 +7,26 @@ import Chuxly from "../../../public/images/chuxly.jpg";
 const data = [
   {
     id: 1,
-    title: "Digital Strtegy",
+    title: "Name: Chuxly",
   },
   {
-    id: 1,
-    title: "UX Design",
+    id: 2,
+    title: "Year: 2024",
   },
   {
-    id: 1,
-    title: "UI Design",
+    id: 3,
+    title: "Tech Stack :Next.js",
   },
-  {
-    id: 1,
-    title: "Shopify Development",
-  },
-  {
-    id: 1,
-    title: "Custom Shopify Apps",
-  },
-  {
-    id: 1,
-    title: "Platform Migrations",
-  },
+  
 ];
 
 const PostHero = () => {
   return (
     <section className={styles.container}>
+      <h2 className={styles.mainHeading}>Latest Projects</h2>
       <div className={styles.content}>
         <div className={styles.box}>
-          <h2 className={styles.heading}>What we do</h2>
+          <h2 className={styles.heading}>Project Details</h2>
           <ul className={styles.listBox}>
             {data.map((x) => (
               <li key={x.id} className={styles.listItem}>
@@ -46,7 +36,7 @@ const PostHero = () => {
           </ul>
         </div>
         <div className={styles.box}>
-          <h2 className={styles.heading}>Latest Journal Entry</h2>
+          <h2 className={styles.heading}>Description</h2>
           <div className={styles.listBox}>
             <h3 className={styles.title}>
               CSS Modules vs Tailwind - Why Modules Win All of the Time
@@ -54,13 +44,13 @@ const PostHero = () => {
             <div className={styles.readBox}>
               <RightArrow className={styles.icon} />
               <Link href='/' className={styles.link}>
-                2 Min Read
+                Read case study
               </Link>
             </div>
           </div>
         </div>
         <div className={styles.box}>
-          <h2 className={styles.heading}>Recent Projects</h2>
+          <h2 className={styles.heading}>Preview</h2>
           <div className={styles.listBox}>
             <div className={styles.imgContainer}>
               <Image
