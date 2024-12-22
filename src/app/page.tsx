@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
+import ContactSection from "@/components/ContactSection/ContactSection";
 import Hero from "@/components/Hero/Hero";
 import Nav from "@/components/Nav/Nav";
 import PostHero from "@/components/PostHero/PostHero";
@@ -20,6 +21,7 @@ export default function Home() {
       <SkillsSection />
       <Process />
       <WorkSection />
+      <ContactSection />
     </main>
   );
 }

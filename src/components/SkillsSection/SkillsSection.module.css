@@ -26,13 +26,12 @@
 }
 
 .name {
-  font-size: 2rem;
-  font-family: var(--barlowCondensed);
-  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-family: var(--ABCSocialLight);
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--blueBorder);
   cursor: pointer;
-  padding: .2rem 2rem;
-  border-top: 1px solid var(--green);
-  border-bottom: 1px solid var(--green);
+  padding: 1rem 2rem;
   transition: all 0.1s ease-in;
 }
 
