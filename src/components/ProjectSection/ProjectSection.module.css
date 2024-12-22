@@ -28,6 +28,7 @@
 
 .name {
   font-size: 2rem;
+  color: var(--blue);
   font-family: var(--barlowCondensed);
   text-transform: uppercase;
   cursor: pointer;
@@ -40,7 +41,6 @@
   justify-content: center;
   transition: background-color 0.3s ease-in;
 }
-
 
 .name:hover {
   border-top: 1px solid var(--blueBorder);
@@ -69,6 +69,7 @@
   text-transform: uppercase;
   color: var(--gray);
   font-family: var(--GTAmericaMonoRegular);
+  color: var(--blue);
 }
 
 .iconContainer {

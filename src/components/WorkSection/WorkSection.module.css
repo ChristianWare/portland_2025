@@ -21,12 +21,39 @@
 
 .left {
   border-right: 1px solid var(--blueBorder);
-  padding: 2rem;
   font-family: var(--GTAmericaMonoRegular);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .copy {
+  padding: 2rem;
   font-size: 1.2rem;
+}
+
+.resumeContainer {
+  background-color: var(--blue);
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+}
+
+.resume {
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--green);
 }
 
 .right {
@@ -40,6 +67,7 @@
 
 .name {
   font-size: 2.4rem;
+  color: var(--blue);
   font-family: var(--ABCSocialLight);
   text-transform: capitalize;
   padding: 2rem;

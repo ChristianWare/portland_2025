@@ -80,6 +80,7 @@
   font-size: 1.2rem;
   font-style: normal;
   text-transform: uppercase;
+  color: var(--blue);
 }
 
 .contactBox {
@@ -89,14 +90,6 @@
   justify-content: flex-start;
   gap: 1.5rem;
 }
-/* 
-.underline {
-  font-size: 1.4rem;
-  color: var(--green);
-  background-color: var(--blue);
-  padding: .5rem;
-  margin-right: 1rem;
-} */
 
 .imgContainer {
   position: relative;

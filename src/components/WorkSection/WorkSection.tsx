@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import styles from "./WorkSection.module.css";
-// import Button from "../Button/Button";
 
 const WorkSection = () => {
   const data = [
@@ -45,6 +44,7 @@ const WorkSection = () => {
               href='/Chris_Ware_Resume_2024.pdf'
               target='_blank'
               download={true}
+              className={styles.resumeContainer}
             >
               Download Resume
             </Link>

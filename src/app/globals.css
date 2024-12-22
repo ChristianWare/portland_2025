@@ -12,7 +12,6 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  color: var(--blue);
   scroll-behavior: smooth;
   scroll-margin-top: 65px;
   overscroll-behavior: none;
