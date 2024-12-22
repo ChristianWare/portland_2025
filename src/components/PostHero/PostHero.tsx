@@ -54,7 +54,7 @@ const PostHero = () => {
           </div>
         </div>
         <div className={styles.box}>
-          <h2 className={styles.heading}>Project Name: Chuxly</h2>
+          <h2 className={styles.heading}>Project: Chuxly</h2>
           <div className={styles.listBox}>
             <div className={styles.imgContainer}>
               <Image

@@ -4,6 +4,7 @@ import Nav from "@/components/Nav/Nav";
 import PostHero from "@/components/PostHero/PostHero";
 import PostHeroii from "@/components/PostHeroii/PostHeroii";
 import Process from "@/components/Process/Process";
+import ProjectSection from "@/components/ProjectSection/ProjectSection";
 import SkillsSection from "@/components/SkillsSection/SkillsSection";
 import WorkSection from "@/components/WorkSection/WorkSection";
 
@@ -12,9 +13,10 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
+      <AboutSection />
       <PostHero />
       <PostHeroii />
-      <AboutSection />
+      <ProjectSection />
       <SkillsSection />
       <Process />
       <WorkSection />

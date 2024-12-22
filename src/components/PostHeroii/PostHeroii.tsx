@@ -22,12 +22,12 @@ const data = [
 const PostHeroii = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.topContent}>
+      {/* <div className={styles.topContent}>
         <h2 className={styles.mainHeading}>Fonts & Footers</h2>
-      </div>
+      </div> */}
       <div className={styles.content}>
         <div className={styles.box}>
-          <h2 className={styles.heading}>Preview</h2>
+          <h2 className={styles.heading}>Project: Fonts & Footers</h2>
           <div className={styles.listBox}>
             <div className={styles.imgContainer}>
               <Image
