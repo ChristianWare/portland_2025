@@ -8,6 +8,8 @@
   font-size: 1.8rem;
   font-family: var(--GTAmericaMonoRegular);
   text-transform: uppercase;
+
+  border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
   padding: 2rem;
   display: block;
