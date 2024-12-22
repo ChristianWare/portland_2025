@@ -1,150 +1,37 @@
 .container {
-  margin-top: 3rem;
-}
-
-.layoutWrapper {
-  z-index: 1000;
-  max-width: 1500px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.contentPadding {
-  padding: 5rem;
-  padding-bottom: 0rem;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--green);
 }
 
 .copy {
   color: var(--blue);
   hyphens: auto;
   font-size: 1.3rem;
-  margin-top: 1rem;
-  height: fit-content;
+  margin-top: 3rem;
+  padding-bottom: 7rem;
+  font-family: var(--GTAmericaMonoRegular);
+  text-align: center;
 }
 
-.right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-}
-
-.middleDesktop {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-
-.heading {
-  color: var(--blue);
-  font-weight: 600;
-  font-size: 1.2rem;
+.headingii {
+  font-size: 17vw;
+  line-height: 0.85;
+  letter-spacing: -6px;
   text-transform: uppercase;
-  user-select: none;
-}
-
-.bottomDesktop {
-  border-top: 1px solid gray;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.copy {
-  color: var(--blue);
-  font: 1.2rem;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.lb2 {
-  padding: 2rem;
-  font-size: 0;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.icon {
-  color: var(--blue);
-}
-
-@media screen and (max-width: 1068px) {
-  .top {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media screen and (max-width: 968px) {
-  .right {
-    align-items: center;
-    margin-top: 3rem;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .contentPadding {
-    padding: 3rem;
-    padding-top: 5rem;
-  }
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--barlowCondensed);
+  padding-top: 5rem;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 768px) {
-  .right {
-    flex-direction: column;
-  }
-
-  .bottomDesktop {
-    justify-content: center;
-    align-items: center;
+  .headingii {
+    letter-spacing: -2px;
   }
 }
 
 @media screen and (max-width: 568px) {
-  .layoutWrapper {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-
-  .contentPadding {
-    padding: 3rem 2rem;
-  }
-
-  .heading {
-    font-size: 1.8rem;
-  }
-
-  .leftBorder3 {
-    display: block;
-    margin-top: 3rem;
-  }
-
-  .heading {
-    font-size: 1.4rem;
-  }
-
-  .bottom {
-    border-top: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    margin-top: 2rem;
-  }
-
-  .copy {
-    text-align: center;
+  .headingii {
+    font-size: 17vw;
   }
 }

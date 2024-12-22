@@ -4,7 +4,7 @@ import styles from "./ContactForm.module.css";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-// import Arrow from "../../public/icons/arrow2.svg";
+import Arrow from "../../../public/icons/righArrow.svg";
 
 interface Inputs {
   firstName: string;
@@ -45,8 +45,8 @@ const ContactForm = () => {
       <div className={styles.bottom}>
         <div className={styles.left}>
           <h3 className={styles.headingii}>
-            Thank you for taking the time to review my portfolio. I look forward
-            to speaking with you soon.
+            Looking to work together? Please provide me with some details below and
+            I&apos;ll look to get back to you shortly.
           </h3>
         </div>
         <div className={styles.right}>
@@ -123,8 +123,8 @@ const ContactForm = () => {
             </div>
             <div className={styles.btnBtnContainer}>
               <button className={styles.btn}>
+                <Arrow className={styles.icon} />
                 {loading ? "Sending..." : "Submit"}
-                {/* <Arrow className={styles.icon} /> */}
               </button>
             </div>
           </form>
