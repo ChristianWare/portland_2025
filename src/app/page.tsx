@@ -5,6 +5,7 @@ import PostHero from "@/components/PostHero/PostHero";
 import PostHeroii from "@/components/PostHeroii/PostHeroii";
 import Process from "@/components/Process/Process";
 import SkillsSection from "@/components/SkillsSection/SkillsSection";
+import WorkSection from "@/components/WorkSection/WorkSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
       <Process />
+      <WorkSection />
     </main>
   );
 }

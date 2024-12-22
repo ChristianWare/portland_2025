@@ -112,7 +112,7 @@
   }
 
   .box:nth-child(3) .heading {
-    display: none;
+    text-align: center;
   }
 }
 
