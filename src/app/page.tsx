@@ -3,6 +3,7 @@ import Hero from "@/components/Hero/Hero";
 import Nav from "@/components/Nav/Nav";
 import PostHero from "@/components/PostHero/PostHero";
 import PostHeroii from "@/components/PostHeroii/PostHeroii";
+import SkillsSection from "@/components/SkillsSection/SkillsSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <PostHero />
       <PostHeroii />
       <AboutSection />
+      <SkillsSection />
     </main>
   );
 }

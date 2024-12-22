@@ -12,7 +12,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--suisseReg);
+  color: var(--blue);
   scroll-behavior: smooth;
   scroll-margin-top: 20px;
   overscroll-behavior: none;
