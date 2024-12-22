@@ -31,13 +31,15 @@ const Process = () => {
         <div className={styles.topLeft}>
           <span className={styles.sectionTitle}>My Process</span>
         </div>
-        <div className={styles.topRight}>
-          <h2 className={styles.heading}>
-            By taking a holistic approach to web development, I provide clients
-            with personalized solutions, ongoing support, and actionable
-            insights to ensure their success extends far beyond the launch.
-          </h2>
-        </div>
+        <div className={styles.topRight}></div>
+      </div>
+      <div className={styles.middle}>
+        <div className={styles.middleLeft}></div>
+        <h2 className={styles.heading}>
+          By taking a holistic approach to web development, I provide clients
+          with personalized solutions, ongoing support, and actionable insights
+          to ensure their success extends far beyond the launch.
+        </h2>
       </div>
       <div className={styles.bottom}>
         {data.map((x) => (

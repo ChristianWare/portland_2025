@@ -33,25 +33,20 @@
   cursor: pointer;
   border-top: 1px solid var(--green);
   border-bottom: 1px solid var(--green);
-  transition: all 0.1s ease-in;
   border: 1px solid var(--blueBorder);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease-in;
 }
 
-.name:nth-child(1) {
-  padding-top: 2rem;
-}
-
-.name:nth-child(6) {
-  padding-bottom: 2rem;
-}
 
 .name:hover {
   border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
+  background-color: var(--blue);
+  color: var(--green);
 }
 
 .right {
@@ -60,6 +55,7 @@
   align-items: center;
   padding: 2rem;
   min-height: 400px;
+  transition: all 0.3s ease-in;
 }
 
 .icon {
@@ -87,6 +83,8 @@
   position: relative;
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
 }
 
 .image {
@@ -94,11 +92,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in;
 }
 
 .image:hover {
   transform: scale(1.1);
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (max-width: 1068px) {
@@ -106,18 +105,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* .left {
-    padding: 3rem 0rem;
-  } */
-
-  /* .name {
-    cursor: default;
-  } */
-
-  /* .name:hover {
-    border-top: 1px solid var(--green);
-    border-bottom: 1px solid var(--green);
-  } */
+  .name {
+    padding: 5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {

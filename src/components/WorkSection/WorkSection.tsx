@@ -37,7 +37,7 @@ const WorkSection = () => {
         <div className={styles.bottom}>
           <div className={styles.left}>
             <p className={styles.copy}>
-              • Here is a brief summary of the places I have worked. Click here to
+              Here is a brief summary of the places I have worked. Click here to
               download my resume.
             </p>
           </div>
