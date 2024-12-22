@@ -51,7 +51,7 @@ span {
 
 h1 {
   font-size: 12vw;
-  line-height: .85;
+  line-height: 0.85;
   letter-spacing: -6px;
   text-transform: uppercase;
   text-align: center;
@@ -62,7 +62,7 @@ h1 {
 h2 {
   font-size: 1.8rem;
   line-height: 1;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-family: var(--barlowCondensed);
 }
 
@@ -111,9 +111,8 @@ textarea:focus {
   outline: none;
 }
 
-.toastFont {
-  font-family: var(--interTight);
-  font-weight: 700;
+section {
+  background-color: var(--green);
 }
 
 /* ::-webkit-scrollbar-thumb {
@@ -151,14 +150,13 @@ textarea:focus {
   p {
     font-size: 113.7%;
   }
-
 }
 
 @media screen and (max-width: 568px) {
   html {
     font-size: 50%;
   }
-  
+
   h1 {
     font-size: 17vw;
   }

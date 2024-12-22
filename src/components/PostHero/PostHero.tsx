@@ -22,7 +22,7 @@ const data = [
 const PostHero = () => {
   return (
     <section className={styles.container}>
-      <p className={styles.copy}>Recent Projects</p>
+      <span className={styles.sectionTitle}>Recent Projects</span>
       <div className={styles.topContent}>
         <h2 className={styles.mainHeading}>Chuxly</h2>
       </div>

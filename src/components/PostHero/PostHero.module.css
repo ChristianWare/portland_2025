@@ -2,7 +2,7 @@
   background-color: var(--green);
 }
 
-.copy {
+.sectionTitle {
   color: var(--blue);
   text-align: center;
   font-size: 1.8rem;
@@ -10,6 +10,7 @@
   text-transform: uppercase;
   border-bottom: 1px solid var(--blueBorder);
   padding: 2rem;
+  display: block;
 }
 
 .content,
