@@ -108,10 +108,13 @@ const SkillsSection = () => {
                 onMouseEnter={() => handleHover(item.icon)}
                 onMouseLeave={() => handleHover(null)}
               >
-                {item.name}
+                {index + 1}. {item.name}
               </li>
             ))}
           </ul>
+          {/* <br />
+          <div className={styles.name}>and growing...</div>
+          <br /> */}
         </div>
         <div className={styles.right}>
           {activeIcon ? (

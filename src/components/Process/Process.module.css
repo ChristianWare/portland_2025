@@ -1,0 +1,133 @@
+.container {
+  border-top: 1px solid var(--lightBlack);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.topLeft {
+  grid-column: span 1;
+  height: 100%;
+  border-right: 1px solid var(--blueBorder);
+}
+
+.topRight {
+  grid-column: span 3;
+  padding: 2rem;
+  padding-bottom: 20rem;
+}
+
+.heading {
+  font-size: 5.4rem;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  color: var(--blue);
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: var(--GTAmericaMonoRegular);
+  text-transform: uppercase;
+  padding: 2rem;
+  display: flex;
+}
+
+.bottom {
+  display: grid;
+  border-top: 1px solid var(--blueBorder);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10rem;
+  border: 1px solid var(--lightBlack);
+  padding: 2rem;
+  position: relative;
+  border-right: 1px solid var(--blueBorder);
+}
+
+.card:nth-child(4) {
+  background-color: var(--blue);
+}
+
+.card:nth-child(4) h3,
+.card:nth-child(4) span,
+.card:nth-child(4) p {
+  color: var(--green);
+}
+
+.index {
+  font-size: 15rem;
+  font-family: var(--barlowCondensed);
+}
+
+.feature {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.desc {
+  color: var(--blue);
+  font-family: var(--ABCSocialLight);
+}
+
+@media screen and (max-width: 968px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .topLeft {
+    border-top: 1px solid var(--blueBorder);
+    border-bottom: 1px solid var(--blueBorder);
+    border-right: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topRight {
+    padding-bottom: 5rem;
+  }
+
+  .sectionTitle {
+    text-align: center;
+  }
+
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--blueBorder);
+    border-right: none;
+    gap: 5rem;
+  }
+  .desc {
+    text-align: center;
+  }
+
+  .feature {
+    text-align: center;
+    width: 100%;
+  }
+}

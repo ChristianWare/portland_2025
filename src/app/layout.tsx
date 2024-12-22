@@ -4,11 +4,11 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 
-const EduSocialCondensedMedium = localFont({
-  src: "../../public/fonts/EduSocialCondensedMedium.woff2",
-  variable: "--EduSocialCondensedMedium",
-  display: "swap",
-});
+// const EduSocialCondensedMedium = localFont({
+//   src: "../../public/fonts/EduSocialCondensedMedium.woff2",
+//   variable: "--EduSocialCondensedMedium",
+//   display: "swap",
+// });
 
 const ABCSocialLight = localFont({
   src: "../../public/fonts/ABCSocialLight.woff2",
@@ -22,18 +22,11 @@ const GTAmericaMonoRegular = localFont({
   display: "swap",
 });
 
-const CigarsLight = localFont({
-  src: "../../public/fonts/CigarsLight.woff2",
-  variable: "--CigarsLight",
-  display: "swap",
-});
-
 const barlowCondensed = Barlow_Condensed({
   variable: "--barlowCondensed",
   weight: "500",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -48,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${EduSocialCondensedMedium.variable} ${ABCSocialLight.variable} ${GTAmericaMonoRegular.variable} ${CigarsLight.variable} ${barlowCondensed.variable}`}
+        className={`${ABCSocialLight.variable} ${GTAmericaMonoRegular.variable} ${barlowCondensed.variable}`}
       >
         {children}
       </body>

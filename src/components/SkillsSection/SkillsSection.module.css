@@ -4,6 +4,7 @@
   font-size: 1.8rem;
   font-family: var(--GTAmericaMonoRegular);
   text-transform: uppercase;
+  border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
   padding: 2rem;
   display: block;
@@ -32,6 +33,14 @@
   border-top: 1px solid var(--green);
   border-bottom: 1px solid var(--green);
   transition: all 0.1s ease-in;
+}
+
+.name:nth-child(1) {
+  padding-top: 2rem;
+}
+
+.name:nth-child(17) {
+  padding-bottom: 2rem;
 }
 
 .name:hover {
