@@ -3,8 +3,7 @@ import styles from "./AboutSection.module.css";
 
 const AboutSection = () => {
   return (
-    <section className={styles.container}>
-      {/* <span className={styles.sectionTitle}>About Me</span> */}
+    <section className={styles.container} id='about'>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>

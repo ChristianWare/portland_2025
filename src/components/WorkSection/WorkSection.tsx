@@ -29,7 +29,7 @@ const WorkSection = () => {
   ];
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='resume'>
       <div className={styles.container}>
         <div className={styles.top}>
           <span className={styles.sectionTitle}>Work History</span>

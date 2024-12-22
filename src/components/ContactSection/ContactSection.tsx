@@ -20,7 +20,7 @@ const ContactSection = () => {
         </div>
         {/* <div className={styles.middle}>
         </div> */}
-        <div className={styles.bottom}>
+        <div className={styles.bottom} id='contact'>
           <div className={styles.bottomLeft}>
             <h3 className={styles.sectionHeading}>what clients say</h3>
             <p className={styles.copy}>

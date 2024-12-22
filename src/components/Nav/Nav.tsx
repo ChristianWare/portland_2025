@@ -6,15 +6,15 @@ import styles from "./Nav.module.css";
 import Logo from "../Logo/Logo";
 
 const navItems = [
-  { text: "Projects", href: "/" },
-  { text: "Resume", href: "/" },
-  { text: "About", href: "/" },
+  { text: "About", href: "/#about" },
+  { text: "Projects", href: "/#projects" },
+  { text: "Resume", href: "/#resume" },
 ];
 
 const navItemsii = [
-  { text: "Journal", href: "/" },
+  { text: "Journal", href: "/#blog" },
   { text: "Github", href: "/" },
-  { text: "Contact", href: "/" },
+  { text: "Contact", href: "/#contact" },
 ];
 
 function Nav() {

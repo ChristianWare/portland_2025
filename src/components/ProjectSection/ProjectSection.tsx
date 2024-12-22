@@ -49,7 +49,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='projects'>
       <span className={styles.sectionTitle}>All Projects</span>
       <div className={styles.content}>
         <div className={styles.left}>
