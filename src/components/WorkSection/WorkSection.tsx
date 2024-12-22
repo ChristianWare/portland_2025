@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import styles from "./WorkSection.module.css";
 // import Button from "../Button/Button";
 
@@ -40,6 +41,13 @@ const WorkSection = () => {
               Here is a brief summary of the places I have worked. Click here to
               download my resume.
             </p>
+            <Link
+              href='/Chris_Ware_Resume_2024.pdf'
+              target='_blank'
+              download={true}
+            >
+              Download Resume
+            </Link>
           </div>
           <div className={styles.right}>
             <ul className={styles.list}>

@@ -12,7 +12,7 @@ const navItems = [
 ];
 
 const navItemsii = [
-  { text: "Journal", href: "/#blog" },
+  { text: "email", href: "/#email" },
   { text: "Github", href: "/" },
   { text: "Contact", href: "/#contact" },
 ];
