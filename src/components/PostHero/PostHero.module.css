@@ -2,11 +2,21 @@
   background-color: var(--green);
 }
 
+.copy {
+  color: var(--blue);
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: var(--GTAmericaMonoRegular);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--blueBorder);
+  padding: 2rem;
+}
+
 .content,
 .topContent {
+  border-bottom: 1px solid var(--blueBorder);
   display: grid;
   grid-template-columns: 1fr 1.5fr 2fr;
-  border-bottom: 1px solid var(--blueBorder);
 }
 
 .mainHeading {

@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 3,
-    title: "Tech Stack :Next.js",
+    title: "Tech Stack: Next.js",
   },
 ];
 

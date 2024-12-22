@@ -15,13 +15,14 @@ const data = [
   },
   {
     id: 3,
-    title: "Tech Stack :Next.js",
+    title: "Tech Stack: Next.js",
   },
 ];
 
 const PostHero = () => {
   return (
     <section className={styles.container}>
+      <p className={styles.copy}>Recent Projects</p>
       <div className={styles.topContent}>
         <h2 className={styles.mainHeading}>Chuxly</h2>
       </div>
