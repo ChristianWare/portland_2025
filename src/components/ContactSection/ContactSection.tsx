@@ -8,13 +8,12 @@ const ContactSection = () => {
         <div className={styles.top}>
           <LayoutWrapper>
             <h2 className={styles.heading}>
-              Our client relationships are our most important assets. Our
-              partnerships are formed around a mutual drive to create inspired
-              work. If this sounds like you, we would love to hear more.
+              Thank you for taking the time to review my portfolio. I look
+              forward to speaking with you soon.Thank you for taking the time to
+              review my portfolio.
             </h2>
           </LayoutWrapper>
         </div>
-
         <div className={styles.middle}>
           <h3 className={styles.sectionHeading}>what clients say</h3>
           <h3 className={styles.sectionHeadingii}>Get in touch</h3>
@@ -25,6 +24,7 @@ const ContactSection = () => {
               Studio Almond really raise the bar for Shopify and Shopify Plus
               agencies in Australasia. They really understand the consumer and
               how to craft a customer-led brand experience with Shopify.
+              <br />
               <br />
               With most Shopify agencies, you generally get design-strong OR
               dev-strong which means you need to find someone else to fill the
