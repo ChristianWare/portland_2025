@@ -91,16 +91,16 @@
   }
 
   .imgContainer {
-    grid-column: 1 / -1; /* Make this box span the entire width of the grid */
+    grid-column: 1 / -1;
   }
 
-  .box:nth-child(3) {
-    order: -1; /* Push this box to the top */
-    grid-column: 1 / -1; /* Make it span across both columns */
+  .box:nth-child(1) {
+    order: -1;
+    grid-column: 1 / -1;
     border-bottom: 1px solid var(--blueBorder);
   }
 
-  .box:nth-child(3) .heading {
+  .box:nth-child(1) .heading {
     display: none;
   }
 }

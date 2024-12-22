@@ -3,6 +3,11 @@
   transition: all 0.3s ease-in-out;
   background-color: var(--green);
   border-bottom: 1px solid var(--blueBorder);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .navbar {
