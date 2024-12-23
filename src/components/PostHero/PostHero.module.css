@@ -78,6 +78,7 @@
 .link {
   font-family: var(--GTAmericaMonoRegular);
   color: var(--blue);
+  text-transform: uppercase;
 }
 
 .imgContainer {

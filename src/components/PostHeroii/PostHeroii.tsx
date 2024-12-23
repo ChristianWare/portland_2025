@@ -50,8 +50,13 @@ const PostHeroii = () => {
             </h3>
             <div className={styles.readBox}>
               <RightArrow className={styles.icon} />
-              <Link href='/' className={styles.link}>
-                Read case study
+             
+              <Link
+                href='https://www.fontsandfooters.com/'
+                target='_blank'
+                className={styles.link}
+              >
+                Live Site
               </Link>
             </div>
           </div>
