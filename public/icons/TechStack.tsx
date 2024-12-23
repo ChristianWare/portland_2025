@@ -1,6 +1,6 @@
 "use client";
 
-import LayoutWrapper from "../LayoutWrapper";
+import LayoutWrapper from "@/components/LayoutWrapper";
 import styles from "./TechStack.module.css";
 import NextJS from "../../public/icons/next.svg";
 import NextAuth from "../../public/icons/nextAuth.svg";
