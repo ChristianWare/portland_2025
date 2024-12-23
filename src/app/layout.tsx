@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import PlausibleProvider from "next-plausible";
 
 const EduSocialCondensedMedium = localFont({
   src: "../../public/fonts/EduSocialCondensedMedium.woff2",
@@ -47,6 +48,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <PlausibleProvider
+          domain='chrisware.dev'
+          trackLocalhost={false}
+          enabled={true}
+        />
+      </head>
       <body
         className={`${EduSocialCondensedMedium.variable} ${ABCSocialLight.variable} ${GTAmericaMonoRegular.variable} ${CigarsLight.variable} ${barlowCondensed.variable}`}
       >
