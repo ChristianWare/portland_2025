@@ -1,7 +1,7 @@
 "use client";
 
-import { JSX, useState } from "react";
 import styles from "./SkillsSection.module.css";
+import { JSX, useState } from "react";
 import NextJS from "../../../public/icons/next.svg";
 import NextAuth from "../../../public/icons/nextAuth.svg";
 import Node from "../../../public/icons/node.svg";
@@ -19,6 +19,7 @@ import Strapi from "../../../public/icons/strapi.svg";
 import Sanity from "../../../public/icons/sanity.svg";
 import Contentful from "../../../public/icons/contentful.svg";
 import Docker from "../../../public/icons/docker.svg";
+import WordPress from "../../../public/icons/wordpress.svg";
 
 const data = [
   {
@@ -85,6 +86,10 @@ const data = [
   {
     icon: <Docker className={styles.icon} />,
     name: "Docker",
+  },
+  {
+    icon: <WordPress className={styles.icon} />,
+    name: "Word Press",
   },
 ] as const;
 
