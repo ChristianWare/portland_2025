@@ -41,7 +41,7 @@ const WorkSection = () => {
               download my resume.
             </p>
             <Link
-              href='/Chris_Ware_Resume_2024.pdf'
+              href='/Chris_Ware_Resume_2025.pdf'
               target='_blank'
               download={true}
               className={styles.resumeContainer}

@@ -56,6 +56,7 @@
 .icon {
   width: 200px;
   height: 200px;
+  color: var(--blue);
   transition: all 0.3s ease-in;
 }
 
