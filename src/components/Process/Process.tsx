@@ -28,13 +28,15 @@ const Process = () => {
   return (
     <section className={styles.container}>
       <div className={styles.top}>
-        <div className={styles.topLeft}>
+        {/* <div className={styles.topLeft}>
           <span className={styles.sectionTitle}>My Process</span>
-        </div>
+        </div> */}
         <div className={styles.topRight}></div>
       </div>
       <div className={styles.middle}>
-        <div className={styles.middleLeft}></div>
+        <div className={styles.middleLeft}>
+          <span className={styles.sectionTitle}>My Process</span>
+        </div>
         <h2 className={styles.heading}>
           By taking a holistic approach to web development, I provide clients
           with personalized solutions, ongoing support, and actionable insights

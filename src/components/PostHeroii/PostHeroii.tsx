@@ -48,17 +48,6 @@ const PostHeroii = () => {
               building fully functional e-commerce websites for small business
               owners.
             </h3>
-            <div className={styles.readBox}>
-              <RightArrow className={styles.icon} />
-             
-              <Link
-                href='https://www.fontsandfooters.com/'
-                target='_blank'
-                className={styles.link}
-              >
-                Live Site
-              </Link>
-            </div>
           </div>
         </div>
         <div className={styles.box}>
@@ -70,6 +59,17 @@ const PostHeroii = () => {
               </li>
             ))}
           </ul>
+            <div className={styles.readBox}>
+              <RightArrow className={styles.icon} />
+             
+              <Link
+                href='https://www.fontsandfooters.com/'
+                target='_blank'
+                className={styles.link}
+              >
+                Live Site
+              </Link>
+            </div>
         </div>
       </div>
     </section>

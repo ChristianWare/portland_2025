@@ -23,9 +23,6 @@ const PostHero = () => {
   return (
     <section className={styles.container}>
       <span className={styles.sectionTitle}>Recent Projects</span>
-      {/* <div className={styles.topContent}>
-        <h2 className={styles.mainHeading}>Chuxly</h2>
-      </div> */}
       <div className={styles.content}>
         <div className={styles.box}>
           <h2 className={styles.heading}>Details</h2>
@@ -36,6 +33,16 @@ const PostHero = () => {
               </li>
             ))}
           </ul>
+          <div className={styles.readBox}>
+            <RightArrow className={styles.icon} />
+            <Link
+              href='https://www.chuxly.com/'
+              target='_blank'
+              className={styles.link}
+            >
+              Live Site
+            </Link>
+          </div>
         </div>
         <div className={styles.box}>
           <h2 className={styles.heading}>Description</h2>
@@ -45,20 +52,11 @@ const PostHero = () => {
               home theater speakers; and headphones, components, and
               accessories.
             </h3>
-            <div className={styles.readBox}>
-              <RightArrow className={styles.icon} />
-              <Link
-                href='https://www.chuxly.com/'
-                target='_blank'
-                className={styles.link}
-              >
-                Live Site
-              </Link>
-            </div>
+            
           </div>
         </div>
         <div className={styles.box}>
-          <h2 className={styles.heading}>Project: Chuxly</h2>
+          <h2 className={styles.heading}>Preview</h2>
           <div className={styles.listBox}>
             <div className={styles.imgContainer}>
               <Image

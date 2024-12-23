@@ -7,6 +7,7 @@
   grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
+  padding: 2rem;
 }
 
 .topLeft {
@@ -36,14 +37,15 @@
 }
 
 .sectionTitle {
-  color: var(--green);
-  background-color: var(--blue);
+  color: var(--blue);
+  border-bottom: 1px solid var(--blueBorder);
   text-align: center;
   font-size: 1.8rem;
   font-family: var(--GTAmericaMonoRegular);
   text-transform: uppercase;
   padding: 2rem;
   display: flex;
+  width: 100%;
 }
 
 .bottom {
@@ -102,7 +104,8 @@
   }
 
   .top {
-    border-top: none;
+    /* border-top: none; */
+    padding: 3rem;
   }
 
   .topLeft {
@@ -123,11 +126,18 @@
 
   .middleLeft {
     /* display: none; */
-    background-color: red;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .sectionTitle {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .bottom {
