@@ -13,15 +13,15 @@ const ContactSection = () => {
         <div className={styles.top}>
           <LayoutWrapper>
             <h2 className={styles.heading}>
-              Thank you for taking the time to review my portfolio. I look
-              forward to speaking with you soon. Thank you for taking the time
-              to review my portfolio.
+              Thank you for taking the time to review my portfolio website. I
+              look forward to speaking with you soon. Feel free to reach out to
+              me with any questions you have.
             </h2>
           </LayoutWrapper>
         </div>
         <div className={styles.bottom} id='contact'>
           <div className={styles.bottomLeft}>
-            <h3 className={styles.sectionHeading}>what clients say</h3>
+            <h3 className={styles.sectionHeading}>More details</h3>
             <p className={styles.copy}>
               My development toolkit is centered around Next.js, a powerful
               React framework that enables the creation of high-performance,
@@ -67,6 +67,9 @@ const ContactSection = () => {
                     className={styles.address}
                   >
                     linkedin.com/in/christian-ware
+                  </Link>
+                  <Link href='tel:+6236326780' className={styles.address}>
+                    623-335-4992{" "}
                   </Link>
                 </div>
                 <TopNav />

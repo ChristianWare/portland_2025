@@ -13,7 +13,7 @@ const navItems = [
 
 const navItemsii = [
   { text: "email", href: "/#email" },
-  { text: "Github", href: "/" },
+  { text: "Github", href: "https://github.com/ChristianWare", target: "_blank" },
   { text: "Contact", href: "/#contact" },
 ];
 
@@ -60,7 +60,7 @@ function Nav() {
                 className={styles.navItem}
                 onClick={() => setIsOpen(false)}
               >
-                <Link href={navItem.href}>{navItem.text}</Link>
+                <Link href={navItem.href} target="">{navItem.text}</Link>
               </li>
             ))}
           </ul>
