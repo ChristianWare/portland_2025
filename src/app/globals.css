@@ -114,6 +114,10 @@ section {
   background-color: var(--green);
 }
 
+.toastFont {
+  font-family: var(--ABCSocialLight);
+}
+
 /* ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background: var(--secondary);
