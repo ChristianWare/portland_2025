@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 3,
-    title: "Tech Stack: Next.js",
+    title: "Framework: Next.js",
   },
 ];
 
@@ -33,16 +33,14 @@ const PostHero = () => {
               </li>
             ))}
           </ul>
-          <div className={styles.readBox}>
-            <RightArrow className={styles.icon} />
-            <Link
-              href='https://www.chuxly.com/'
-              target='_blank'
-              className={styles.link}
-            >
-              Live Site
-            </Link>
-          </div>
+          <Link
+            href='https://www.chuxly.com/'
+            target='_blank'
+            className={styles.link}
+          >
+            Live Site
+          <RightArrow className={styles.icon} />
+          </Link>
         </div>
         <div className={styles.box}>
           <h2 className={styles.heading}>Description</h2>
@@ -52,7 +50,6 @@ const PostHero = () => {
               home theater speakers; and headphones, components, and
               accessories.
             </h3>
-            
           </div>
         </div>
         <div className={styles.box}>

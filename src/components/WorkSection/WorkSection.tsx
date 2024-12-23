@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import styles from "./WorkSection.module.css";
+import Arrow from '../../../public/icons/righArrow.svg'
 
 const WorkSection = () => {
   const data = [
@@ -46,7 +47,7 @@ const WorkSection = () => {
               download={true}
               className={styles.resumeContainer}
             >
-              Download Resume
+              Download Resume <Arrow className={styles.icon} />
             </Link>
           </div>
           <div className={styles.right}>

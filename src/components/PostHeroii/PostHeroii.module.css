@@ -49,32 +49,39 @@
   text-decoration: underline;
 }
 
-.readBox {
+.link {
+  font-family: var(--GTAmericaMonoRegular);
+  color: var(--green);
+  text-transform: uppercase;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 2rem;
   background-color: var(--blue);
   width: 100%;
+  border: 1px solid var(--blue);
+  transition: all 0.2s ease-in;
+}
+
+.link:hover .icon {
+  color: var(--blue);
+  transition: all 0.2s ease-in;
+}
+
+.link:hover {
+  background-color: var(--green);
+  color: var(--blue);
+  transition: all 0.2s ease-in;
 }
 
 .icon {
   width: 2rem;
   height: 2rem;
   color: var(--green);
-}
-
-.link {
-  font-family: var(--GTAmericaMonoRegular);
-  color: var(--green);
-  text-transform: uppercase;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .imgContainer {

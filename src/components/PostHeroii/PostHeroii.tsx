@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 3,
-    title: "Tech Stack: Next.js",
+    title: "Framework: Next.js",
   },
 ];
 
@@ -59,7 +59,7 @@ const PostHeroii = () => {
               </li>
             ))}
           </ul>
-            <div className={styles.readBox}>
+          {/* <div className={styles.readBox}>
               <RightArrow className={styles.icon} />
              
               <Link
@@ -69,7 +69,15 @@ const PostHeroii = () => {
               >
                 Live Site
               </Link>
-            </div>
+            </div> */}
+          <Link
+            href='https://www.fontsandfooters.com/'
+            target='_blank'
+            className={styles.link}
+          >
+            Live Site
+            <RightArrow className={styles.icon} />
+          </Link>
         </div>
       </div>
     </section>
