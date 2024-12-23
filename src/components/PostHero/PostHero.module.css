@@ -78,6 +78,7 @@
   width: 100%;
   border: 1px solid var(--blue);
   transition: all 0.2s ease-in;
+  letter-spacing: -.5px;
 }
 
 .link:hover .icon {

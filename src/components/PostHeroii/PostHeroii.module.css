@@ -64,6 +64,7 @@
   background-color: var(--blue);
   width: 100%;
   border: 1px solid var(--blue);
+  letter-spacing: -0.5px;
   transition: all 0.2s ease-in;
 }
 
