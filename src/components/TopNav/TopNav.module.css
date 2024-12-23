@@ -40,7 +40,7 @@
 }
 
 .detail:hover .icon {
-  color: red;
+  color: var(--green);
 }
 
 @media screen and (max-width: 1168px) {

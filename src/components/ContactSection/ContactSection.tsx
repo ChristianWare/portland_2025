@@ -4,6 +4,7 @@ import Image from "next/image";
 import ChrisWare from "../../../public/images/author.png";
 import ContactForm from "../ContactForm/ContactForm";
 import TopNav from "../TopNav/TopNav";
+import Link from "next/link";
 
 const ContactSection = () => {
   return (
@@ -18,24 +19,19 @@ const ContactSection = () => {
             </h2>
           </LayoutWrapper>
         </div>
-        {/* <div className={styles.middle}>
-        </div> */}
         <div className={styles.bottom} id='contact'>
           <div className={styles.bottomLeft}>
             <h3 className={styles.sectionHeading}>what clients say</h3>
             <p className={styles.copy}>
-              Studio Almond really raise the bar for Shopify and Shopify Plus
-              agencies in Australasia. They really understand the consumer and
-              how to craft a customer-led brand experience with Shopify.
+              My development toolkit is centered around Next.js, a powerful
+              React framework that enables the creation of high-performance,
+              scalable web applications.
               <br />
-              <br />
-              With most Shopify agencies, you generally get design-strong OR
-              dev-strong which means you need to find someone else to fill the
-              gap on either end. And then you generally also have to pick
-              between customising an out-of-the-box theme or custom built theme,
-              the former can limit brands, the latter often requires significant
-              investment that isnt ideal for growing brands without big box
-              capital. Studio Almond gave us the best of all worlds.
+              <br />I use TypeScript to ensure type safety and maintainable
+              code, while MongoDB serves as my go-to database solution for
+              handling complex data requirements. Additionally, I leverage tools
+              like Git for version control and CI/CD pipelines to streamline
+              deployment and ensure code quality.
             </p>
           </div>
           <div className={styles.bottomRight}>
@@ -43,20 +39,35 @@ const ContactSection = () => {
             <div className={styles.brGrid}>
               <div className={styles.br1}>
                 <address>
-                  <span className={styles.address}>L1/36 Karaka st </span>{" "}
+                  <span className={styles.address}>
+                    Located in: Phoenix, AZ
+                  </span>{" "}
                   <br />
-                  <span className={styles.address}>eden terrace</span>
-                  <br />
-                  <span className={styles.address}>Auwckland 1010</span>
-                  <br />
-                  <span className={styles.address}>new zealand</span>
+                  <span className={styles.address}>
+                    Originally From: New York City
+                  </span>
                 </address>
                 <div className={styles.contactBox}>
-                  <div className={styles.address}>chris.ware.dev@gmail.com</div>
-                  <div className={styles.address}>github.com/christianware</div>
-                  <div className={styles.address}>
-                    linkedin.com/christianware
-                  </div>
+                  <Link
+                    href='mailto:chris.ware.dev@gmail.com'
+                    className={styles.address}
+                  >
+                    chris.ware.dev@gmail.com
+                  </Link>
+                  <Link
+                    href='https://github.com/ChristianWare'
+                    target='_blank'
+                    className={styles.address}
+                  >
+                    github.com/ChristianWare
+                  </Link>
+                  <Link
+                    href='https://www.linkedin.com/in/christian-ware/'
+                    target='_blank'
+                    className={styles.address}
+                  >
+                    linkedin.com/in/christian-ware
+                  </Link>
                 </div>
                 <TopNav />
                 <Image

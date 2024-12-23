@@ -1,8 +1,8 @@
 import styles from "./TopNav.module.css";
 import Link from "next/link";
-import Insta from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
-import Facebook from "../../../public/icons/facebook.svg";
+import Mail from "../../../public/icons/mail.svg";
+import Github from "../../../public/icons/github.svg";
 // import Logo from "../Logo/Logo";
 
 const TopNav = () => {
@@ -14,7 +14,7 @@ const TopNav = () => {
         <div className={styles.logoContainer}>{/* <Logo /> */}</div>
         <div className={styles.leftBottom}>
           <Link
-            href='https://www.linkedin.com/'
+            href='https://www.linkedin.com/in/christian-ware/'
             target='_blank'
             aria-label='LinkedIn'
             className={styles.detail}
@@ -22,20 +22,20 @@ const TopNav = () => {
             <LinkedIn className={styles.icon} />
           </Link>
           <Link
-            href='https://www.facebook.com/fontsandfooters/'
+            href='mailto:chris.ware.dev@gmail.com'
             target='_blank'
             aria-label='Facebook'
             className={styles.detail}
           >
-            <Facebook className={styles.icon} />
+            <Mail className={styles.icon} />
           </Link>
           <Link
-            href='https://www.instagram.com/fontsandfooters/'
+            href='https://github.com/ChristianWare'
             target='_blank'
             aria-label='Instagram'
             className={styles.detail}
           >
-            <Insta className={styles.icon} />
+            <Github className={styles.icon} />
           </Link>
         </div>
       </div>
