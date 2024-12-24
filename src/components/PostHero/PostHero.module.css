@@ -91,7 +91,7 @@
   color: var(--tan);
   text-transform: uppercase;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   gap: 1rem;
   position: absolute;
@@ -117,8 +117,8 @@
 }
 
 .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: var(--tan);
 }
 
