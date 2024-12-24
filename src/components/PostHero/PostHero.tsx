@@ -64,7 +64,7 @@ const projects = [
 
 const PostHero = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='projects'>
       <SectionTitle title='Recent Projects' />
       {projects.map((x) => (
         <div className={styles.content} key={x.id}>
@@ -84,9 +84,7 @@ const PostHero = () => {
           <div className={styles.box}>
             <h2 className={styles.heading}>Description</h2>
             <div className={styles.listBox}>
-              <p className={styles.title}>
-                {x.description}
-              </p>
+              <p className={styles.title}>{x.description}</p>
             </div>
           </div>
           <div className={styles.box}>
@@ -104,41 +102,6 @@ const PostHero = () => {
         </div>
       ))}
     </section>
-    // <section className={styles.container}>
-    //   <SectionTitle title='Recent Projects' />
-    //   <div className={styles.content}>
-    //     {projects.map((project) => (
-    //       <div key={project.id} className={styles.box}>
-    //         <h2 className={styles.heading}>Details</h2>
-    //         <ul className={styles.listBox}>
-    //           <li className={styles.listItem}>Name: {project.name}</li>
-    //           <li className={styles.listItem}>Year: {project.year}</li>
-    //           <li className={styles.listItem}>
-    //             Framework: {project.framework}
-    //           </li>
-    //         </ul>
-    //         <Link href={project.link} target='_blank' className={styles.link}>
-    //           Live Site
-    //           <RightArrow className={styles.icon} />
-    //         </Link>
-    //         <h2 className={styles.heading}>Description</h2>
-    //         <div className={styles.listBox}>
-    //           <h3 className={styles.title}>{project.description}</h3>
-    //         </div>
-    //         <h2 className={styles.heading}>Preview</h2>
-    //         <div className={styles.imgContainer}>
-    //           <Image
-    //             src={project.image}
-    //             fill
-    //             alt={project.name}
-    //             title={project.name}
-    //             className={styles.img}
-    //           />
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </section>
   );
 };
 export default PostHero;

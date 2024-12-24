@@ -169,3 +169,9 @@
     margin-right: auto;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .heading {
+    text-indent: 0em;
+  }
+}
