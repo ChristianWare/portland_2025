@@ -10,7 +10,7 @@
     transparent 0,
     transparent 50%
   );
-  background-size: 10px 10px;
+  background-size: 6px 6px;
   text-align: center;
   border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);

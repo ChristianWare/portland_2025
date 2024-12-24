@@ -29,7 +29,6 @@ const Process = () => {
   return (
     <section className={styles.container}>
       <SectionTitle title='My Process' />
-
       <div className={styles.top}>
         <div className={styles.topRight}></div>
       </div>

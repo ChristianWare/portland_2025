@@ -64,7 +64,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10rem;
-  border: 1px solid var(--lightBlack);
   padding: 2rem;
   position: relative;
   border-right: 1px solid var(--blueBorder);

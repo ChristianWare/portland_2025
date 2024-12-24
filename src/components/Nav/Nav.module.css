@@ -15,7 +15,7 @@
     transparent 0,
     transparent 50%
   );
-  background-size: 10px 10px;
+  background-size: 6px 6px;
 }
 
 .navbar {
@@ -132,7 +132,6 @@
     right: -105%;
     top: 0px;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
     width: 100%;
     transition: 0.3s all ease-in;
     z-index: 1000;
