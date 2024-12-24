@@ -1,9 +1,9 @@
 :root {
   --black: #333438;
-  --white: #ffffff;
-  --green: #475e3c;
-  --blue: #b8d5e6;
-  --blueBorder: #b9d5e64d;
+  --tan: #F2E5BF;
+  --green: #257180;
+  --blue: #257180;
+  --blueBorder: #257180;
 }
 
 * {
@@ -45,7 +45,7 @@ h4,
 h5,
 h6,
 span {
-  color: var(--blue);
+  color: var(--green);
 }
 
 h1 {
@@ -63,6 +63,7 @@ h2 {
   line-height: 1;
   letter-spacing: 0.5px;
   font-family: var(--barlowCondensed);
+  font-weight: normal;
 }
 
 h3 {
@@ -99,10 +100,10 @@ p,
 input,
 textarea {
   hyphens: auto;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.4px;
   margin-bottom: 0;
   color: var(--blue);
-  font-size: 1em;
+  font-size: 1.6rem;
 }
 
 input:focus,
@@ -111,7 +112,7 @@ textarea:focus {
 }
 
 section {
-  background-color: var(--green);
+  background-color: var(--tan);
 }
 
 .toastFont {

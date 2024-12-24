@@ -1,9 +1,11 @@
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutSection.module.css";
+import LayoutWrapper from "../LayoutWrapper";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const AboutSection = () => {
   return (
     <section className={styles.container} id='about'>
+      <SectionTitle title='About me' />
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>

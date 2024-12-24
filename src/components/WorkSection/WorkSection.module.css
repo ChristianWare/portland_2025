@@ -1,6 +1,7 @@
 .top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--blue);
 }
 
 .sectionTitle {
@@ -31,11 +32,13 @@
 
 .copy {
   padding: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.7px;
 }
 
 .resumeContainer {
   background-color: var(--blue);
+  color: var(--tan);
   padding: 2.1rem;
   width: 100%;
   display: flex;
@@ -44,7 +47,6 @@
   gap: 1rem;
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: var(--green);
   border: 1px solid var(--blue);
   transition: all 0.2s ease-in;
 }
@@ -52,12 +54,12 @@
 .icon {
   width: 2.5rem;
   height: 2.5rem;
-  color: var(--green);
+  color: var(--tan);
   transition: all 0.2s ease-in;
 }
 
 .resumeContainer:hover {
-  background-color: var(--green);
+  background-color: var(--tan);
   color: var(--blue);
 }
 
@@ -75,10 +77,10 @@
 }
 
 .name {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: var(--blue);
-  font-family: var(--ABCSocialLight);
-  text-transform: capitalize;
+  font-family: var(--GTAmericaMonoRegular);
+  text-transform: uppercase;
   padding: 2rem;
   border-bottom: 1px solid var(--blueBorder);
   transition: all 0.1s ease-in;

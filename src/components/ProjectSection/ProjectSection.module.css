@@ -28,13 +28,14 @@
 
 .name {
   font-size: 2rem;
+  background-color: var(--tan);
   color: var(--blue);
   font-family: var(--barlowCondensed);
   text-transform: uppercase;
   cursor: pointer;
-  border-top: 1px solid var(--green);
-  border-bottom: 1px solid var(--green);
-  border: 1px solid var(--blueBorder);
+  border: 1px solid var(--blue);
+  border-left: none;
+  border-top: none;
   text-align: center;
   display: flex;
   align-items: center;
@@ -42,11 +43,22 @@
   transition: background-color 0.3s ease-in;
 }
 
+.name:nth-child(3) {
+  border-bottom: 1px solid var(--blue);
+  border-right: none;
+}
+
+.name:nth-child(4) {
+  border-bottom: none;
+}
+
+.name:nth-child(5) {
+  border-right: 1px solid var(--blue);
+}
+
 .name:hover {
-  border-top: 1px solid var(--blueBorder);
-  border-bottom: 1px solid var(--blueBorder);
   background-color: var(--blue);
-  color: var(--green);
+  color: var(--tan);
 }
 
 .right {

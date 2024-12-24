@@ -1,5 +1,5 @@
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ContactSection.module.css";
+import LayoutWrapper from "../LayoutWrapper";
 import Image from "next/image";
 import ChrisWare from "../../../public/images/author.png";
 import ContactForm from "../ContactForm/ContactForm";
@@ -38,11 +38,10 @@ const ContactSection = () => {
             <h3 className={styles.sectionHeadingii}>Get in touch</h3>
             <div className={styles.brGrid}>
               <div className={styles.br1}>
-                <address>
+                <address className={styles.addressBox}>
                   <span className={styles.address}>
                     Located in: Phoenix, AZ
-                  </span>{" "}
-                  <br />
+                  </span>
                   <span className={styles.address}>
                     Originally From: New York City
                   </span>
@@ -69,7 +68,7 @@ const ContactSection = () => {
                     linkedin.com/in/christian-ware
                   </Link>
                   <Link href='tel:+6236326780' className={styles.address}>
-                    623-335-4992{" "}
+                    623-335-4992
                   </Link>
                 </div>
                 <TopNav />

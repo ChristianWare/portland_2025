@@ -2,62 +2,98 @@ import styles from "./PostHero.module.css";
 import RightArrow from "../../../public/icons/righArrow.svg";
 import Image from "next/image";
 import Link from "next/link";
+import SectionTitle from "../SectionTitle/SectionTitle";
 import Chuxly from "../../../public/images/chuxly.jpg";
+import FNF from "../../../public/images/fontsandfooters.png";
+import Honey from "../../../public/images/honey.png";
+import Nier from "../../../public/images/nier.png";
+import Taco from "../../../public/images/taco.webp";
 
-const data = [
+const projects = [
   {
     id: 1,
-    title: "Name: Chuxly",
+    name: "Chuxly",
+    year: 2024,
+    framework: "Next.js",
+    src: Chuxly,
+    link: "https://www.chuxly.com/",
+    description:
+      "Chuxly is an e-commerce website offering wireless, portable, and home theater speakers, along with headphones, components, and accessories.",
   },
   {
     id: 2,
-    title: "Year: 2024",
+    name: "Fonts & Footers",
+    year: 2024,
+    framework: "Next.js",
+    src: FNF,
+    link: "https://www.fontsandfooters.com/",
+    description:
+      "Fonts & Footers is a web development agency specializing in creating fully functional e-commerce websites for small business owners, tailored to meet their unique needs.",
   },
   {
     id: 3,
-    title: "Framework: Next.js",
+    name: "Golden Drips",
+    year: 2024,
+    framework: "Next.js",
+    src: Honey,
+    link: "https://www.goldendrips.com/",
+    description:
+      "Golden Drips is an e-commerce website dedicated to selling high-quality honey products across Arizona. The platform supports state-wide delivery with an easy-to-navigate user interface.",
+  },
+  {
+    id: 4,
+    name: "Taco Bell",
+    year: 2024,
+    framework: "Next.js with Sanity.io",
+    src: Taco,
+    link: "https://www.livemas.dev",
+    description:
+      "Taco Bell's redesigned website integrates a seamless user experience with a robust CMS powered by Sanity.io, showcasing the full menu and promotional offers in a visually engaging way.",
+  },
+  {
+    id: 5,
+    name: "Nier Transportation",
+    year: 2024,
+    framework: "Next.js",
+    src: Nier,
+    link: "https://www.niertransportation.com",
+    description:
+      "Nier Transportation's website highlights a luxury black car service with features that make booking and navigation effortless for clients seeking reliable and premium transportation services.",
   },
 ];
 
 const PostHero = () => {
   return (
     <section className={styles.container}>
-      <span className={styles.sectionTitle}>Recent Projects</span>
-      <div className={styles.content}>
-        <div className={styles.box}>
-          <h2 className={styles.heading}>Details</h2>
-          <ul className={styles.listBox}>
-            {data.map((x) => (
-              <li key={x.id} className={styles.listItem}>
-                {x.title}
-              </li>
-            ))}
-          </ul>
-          <Link
-            href='https://www.chuxly.com/'
-            target='_blank'
-            className={styles.link}
-          >
-            Live Site
-          <RightArrow className={styles.icon} />
-          </Link>
-        </div>
-        <div className={styles.box}>
-          <h2 className={styles.heading}>Description</h2>
-          <div className={styles.listBox}>
-            <h3 className={styles.title}>
-              Chuxly is an e-comemrce website offering wireless, portable, and
-              home theater speakers; and headphones, components, and
-              accessories.
-            </h3>
+      <SectionTitle title='Recent Projects' />
+      {projects.map((x) => (
+        <div className={styles.content} key={x.id}>
+          <div className={styles.box}>
+            <h2 className={styles.heading}>Details</h2>
+            <ul className={styles.listBox}>
+              <li className={styles.listItem}>Name: {x.name}</li>
+              <li className={styles.listItem}>Year: {x.year}</li>
+
+              <li className={styles.listItem}>Framework: {x.framework}</li>
+            </ul>
+            <Link href={x.link} target='_blank' className={styles.link}>
+              Live Site
+              <RightArrow className={styles.icon} />
+            </Link>
           </div>
-        </div>
-        <div className={styles.box}>
-          <h2 className={styles.heading}>Preview</h2>
-          <div className={styles.listBox}>
+          <div className={styles.box}>
+            <h2 className={styles.heading}>Description</h2>
+            <div className={styles.listBox}>
+              <p className={styles.title}>
+                {x.description}
+              </p>
+            </div>
+          </div>
+          <div className={styles.box}>
+            <h2 className={styles.heading}>Project Name: {x.name}</h2>
             <div className={styles.imgContainer}>
               <Image
-                src={Chuxly}
+                src={x.src}
                 fill
                 alt='image'
                 title='image'
@@ -66,8 +102,43 @@ const PostHero = () => {
             </div>
           </div>
         </div>
-      </div>
+      ))}
     </section>
+    // <section className={styles.container}>
+    //   <SectionTitle title='Recent Projects' />
+    //   <div className={styles.content}>
+    //     {projects.map((project) => (
+    //       <div key={project.id} className={styles.box}>
+    //         <h2 className={styles.heading}>Details</h2>
+    //         <ul className={styles.listBox}>
+    //           <li className={styles.listItem}>Name: {project.name}</li>
+    //           <li className={styles.listItem}>Year: {project.year}</li>
+    //           <li className={styles.listItem}>
+    //             Framework: {project.framework}
+    //           </li>
+    //         </ul>
+    //         <Link href={project.link} target='_blank' className={styles.link}>
+    //           Live Site
+    //           <RightArrow className={styles.icon} />
+    //         </Link>
+    //         <h2 className={styles.heading}>Description</h2>
+    //         <div className={styles.listBox}>
+    //           <h3 className={styles.title}>{project.description}</h3>
+    //         </div>
+    //         <h2 className={styles.heading}>Preview</h2>
+    //         <div className={styles.imgContainer}>
+    //           <Image
+    //             src={project.image}
+    //             fill
+    //             alt={project.name}
+    //             title={project.name}
+    //             className={styles.img}
+    //           />
+    //         </div>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </section>
   );
 };
 export default PostHero;

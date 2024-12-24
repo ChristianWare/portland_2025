@@ -1,4 +1,5 @@
 // import LayoutWrapper from "../LayoutWrapper";
+import SectionTitle from "../SectionTitle/SectionTitle";
 import styles from "./Process.module.css";
 
 const data = [
@@ -27,15 +28,14 @@ const data = [
 const Process = () => {
   return (
     <section className={styles.container}>
+      <SectionTitle title='My Process' />
+
       <div className={styles.top}>
-        {/* <div className={styles.topLeft}>
-          <span className={styles.sectionTitle}>My Process</span>
-        </div> */}
         <div className={styles.topRight}></div>
       </div>
       <div className={styles.middle}>
         <div className={styles.middleLeft}>
-          <span className={styles.sectionTitle}>My Process</span>
+          <span className={styles.sectionTitle}>How I work</span>
         </div>
         <h2 className={styles.heading}>
           By taking a holistic approach to web development, I provide clients

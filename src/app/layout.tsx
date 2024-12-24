@@ -32,7 +32,7 @@ const CigarsLight = localFont({
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--barlowCondensed",
-  weight: "500",
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
 });
 

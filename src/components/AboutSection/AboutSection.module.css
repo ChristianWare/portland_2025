@@ -1,5 +1,3 @@
-/* border-bottom: 1px solid var(--blueBorder); */
-
 .sectionTitle {
   color: var(--blue);
   text-align: center;
@@ -23,13 +21,17 @@
   font-size: 5rem;
   text-transform: uppercase;
   text-indent: 4em;
+  letter-spacing: -0.7px;
+  line-height: 1.1;
+  width: 80%;
+  font-weight: 600;
 }
 
 .copy {
   color: var(--blue);
-  font-family: var(--ABCSocialLight);
+  font-family: var(--GTAmericaMonoRegular);
+  font-size: 1.8rem;
   max-width: 424px;
-  font-size: 1.9rem;
 }
 
 .bottom {
@@ -37,6 +39,10 @@
 }
 
 @media screen and (max-width: 968px) {
+  .heading {
+    width: 100%;
+  }
+
   .bottom {
     padding-left: 0%;
     display: flex;
@@ -47,7 +53,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .heading {
+    text-indent: 0em;
+  }
+
   .copy {
     max-width: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 4rem;
   }
 }

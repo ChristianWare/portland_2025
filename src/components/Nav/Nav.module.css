@@ -1,13 +1,21 @@
 .header {
   padding: 1.7rem 2.4rem;
   transition: all 0.3s ease-in-out;
-  background-color: var(--green);
+  background-color: var(--tan);
   border-bottom: 1px solid var(--blueBorder);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--blue),
+    var(--tan) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }
 
 .navbar {
@@ -47,15 +55,29 @@
   width: 100%;
 }
 
+.navItems {
+  padding: 1rem;
+  border: 1px solid var(--blue);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--tan);
+}
+
 .navItemsii {
   justify-content: flex-end;
+  background-color: var(--tan);
+  padding: 1rem;
+  border: 1px solid var(--blue);
+  width: fit-content;
+  margin-left: auto;
 }
 
 .navItem {
   position: relative;
   line-height: 1em;
   font-family: var(--GTAmericaMonoRegular);
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: var(--blue);
   user-select: none;
@@ -68,6 +90,9 @@
   display: none;
   z-index: 999;
   position: relative;
+  padding: 1rem;
+  border: 1px solid var(--blue);
+  background-color: var(--tan);
 }
 
 .whiteBar {
@@ -113,7 +138,7 @@
     z-index: 1000;
     padding: 2rem;
     transform-origin: top;
-    background-color: var(--green);
+    background-color: var(--tan);
     transition: all 0.3s ease-in;
     border-bottom: 1px solid var(--blueBorder);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
@@ -133,17 +158,22 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 2rem;
+    margin-right: auto;
+    width: 100%;
+    border: none;
   }
 
   .navItem {
-    font-size: 1.8rem;
+    font-size: 3rem;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: -0.2px;
-    border-bottom: 1px solid var(--green3);
     width: 100%;
     padding: 2rem;
     padding-bottom: 1rem;
+    color: var(--blue);
+
+    font-family: var(--barlowCondensed);
   }
 
   .hamburger {
@@ -156,9 +186,10 @@
     opacity: 0;
   }
 
-  .hamburger.active .whiteBar:nth-child(1) {
+  /* .hamburger.active .whiteBar:nth-child(1) {
     -webkit-transform: translateY(0px) rotate(45deg);
     transform: translateY(12px) rotate(45deg);
+    background-color: var(--blue);
   }
 
   .hamburger.active .whiteBar:nth-child(2) {
@@ -168,5 +199,6 @@
   .hamburger.active .whiteBar:nth-child(3) {
     -webkit-transform: translateY(0px) rotate(-45deg);
     transform: translateY(2px) rotate(-45deg);
-  }
+    background-color: var(--blue);
+  } */
 }

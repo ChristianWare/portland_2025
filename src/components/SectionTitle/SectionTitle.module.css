@@ -1,0 +1,25 @@
+.top {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--blue),
+    var(--tan) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
+  background-color: var(--tan);
+  text-align: center;
+  border-top: 1px solid var(--blueBorder);
+  border-bottom: 1px solid var(--blueBorder);
+  margin-bottom: 5rem;
+}
+
+.sectionTitle {
+  color: var(--blue);
+  font-size: 1.8rem;
+  font-family: var(--GTAmericaMonoRegular);
+  text-transform: uppercase;
+  background-color: var(--tan);
+  padding: 1rem;
+  border: 1px solid var(--blue);
+}

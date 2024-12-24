@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./SkillsSection.module.css";
-import { JSX, useState } from "react";
+import { JSX, useState, useEffect } from "react";
 import NextJS from "../../../public/icons/next.svg";
 import NextAuth from "../../../public/icons/nextAuth.svg";
 import Node from "../../../public/icons/node.svg";
@@ -20,6 +20,7 @@ import Sanity from "../../../public/icons/sanity.svg";
 import Contentful from "../../../public/icons/contentful.svg";
 import Docker from "../../../public/icons/docker.svg";
 import WordPress from "../../../public/icons/wordpress.svg";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const data = [
   {
@@ -95,14 +96,26 @@ const data = [
 
 const SkillsSection = () => {
   const [activeIcon, setActiveIcon] = useState<JSX.Element | null>(null);
+  const [currentIconIndex, setCurrentIconIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setCurrentIconIndex((prevIndex) => (prevIndex + 1) % data.length);
+    }, 200);
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   const handleHover = (icon: JSX.Element | null) => {
+    setIsPaused(!!icon);
     setActiveIcon(icon);
   };
 
   return (
     <section className={styles.container}>
-      <span className={styles.sectionTitle}>Skills</span>
+      <SectionTitle title='Skills' />
       <div className={styles.content}>
         <div className={styles.left}>
           <ul className={styles.list}>
@@ -117,16 +130,9 @@ const SkillsSection = () => {
               </li>
             ))}
           </ul>
-          {/* <br />
-          <div className={styles.name}>and growing...</div>
-          <br /> */}
         </div>
         <div className={styles.right}>
-          {activeIcon ? (
-            activeIcon
-          ) : (
-            <span className={styles.placeholder}>Hover over a skill</span>
-          )}
+          {isPaused && activeIcon ? activeIcon : data[currentIconIndex].icon}
         </div>
       </div>
     </section>

@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import styles from "./WorkSection.module.css";
-import Arrow from '../../../public/icons/righArrow.svg'
+import Link from "next/link";
+import Arrow from "../../../public/icons/righArrow.svg";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const WorkSection = () => {
   const data = [
@@ -31,9 +32,11 @@ const WorkSection = () => {
 
   return (
     <section className={styles.container} id='resume'>
-      <div className={styles.container}>
+      <SectionTitle title='Work History' />
+
+      <div className={styles.content}>
         <div className={styles.top}>
-          <span className={styles.sectionTitle}>Work History</span>
+          <span className={styles.sectionTitle}>My Experience</span>
         </div>
         <div className={styles.bottom}>
           <div className={styles.left}>

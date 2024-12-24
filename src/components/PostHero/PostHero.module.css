@@ -1,25 +1,42 @@
 .container {
-  background-color: var(--green);
+  padding-bottom: 20rem;
+}
+
+.top {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--blue),
+    var(--tan) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
+  text-align: center;
+  border-top: 1px solid var(--blueBorder);
+  border-bottom: 1px solid var(--blueBorder);
+  margin-bottom: 5rem;
 }
 
 .sectionTitle {
   color: var(--blue);
-  text-align: center;
   font-size: 1.8rem;
   font-family: var(--GTAmericaMonoRegular);
   text-transform: uppercase;
-
-  border-top: 1px solid var(--blueBorder);
-  border-bottom: 1px solid var(--blueBorder);
-  padding: 2rem;
-  display: block;
+  background-color: var(--tan);
+  padding: 1rem;
+  border: 1px solid var(--blue);
 }
 
 .content,
 .topContent {
+  border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
   display: grid;
   grid-template-columns: 1fr 1.5fr 2fr;
+}
+
+.content {
+  margin-bottom: 15rem;
 }
 
 .mainHeading {
@@ -38,6 +55,12 @@
   text-transform: uppercase;
   padding: 1.5rem;
   border-bottom: 1px solid var(--blueBorder);
+  width: 100%;
+}
+
+.title {
+  font-family: var(--GTAmericaMonoRegular);
+  letter-spacing: -1px;
 }
 
 .listBox {
@@ -53,9 +76,10 @@
 .listItem {
   color: var(--blue);
   font-family: var(--GTAmericaMonoRegular);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   cursor: pointer;
   text-transform: uppercase;
+  letter-spacing: -0.2px;
 }
 
 .listItem:hover {
@@ -64,7 +88,7 @@
 
 .link {
   font-family: var(--GTAmericaMonoRegular);
-  color: var(--green);
+  color: var(--tan);
   text-transform: uppercase;
   display: flex;
   align-items: flex-start;
@@ -78,7 +102,7 @@
   width: 100%;
   border: 1px solid var(--blue);
   transition: all 0.2s ease-in;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
 
 .link:hover .icon {
@@ -87,7 +111,7 @@
 }
 
 .link:hover {
-  background-color: var(--green);
+  background-color: var(--tan);
   color: var(--blue);
   transition: all 0.2s ease-in;
 }
@@ -95,7 +119,7 @@
 .icon {
   width: 2rem;
   height: 2rem;
-  color: var(--green);
+  color: var(--tan);
 }
 
 .imgContainer {
@@ -105,6 +129,7 @@
 }
 
 .img {
+  padding: 2rem;
   object-fit: cover;
 }
 
@@ -122,17 +147,29 @@
   }
 
   .imgContainer {
-    grid-column: 1 / -1; /* Make this box span the entire width of the grid */
+    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .box:nth-child(3) {
-    order: -1; /* Push this box to the top */
-    grid-column: 1 / -1; /* Make it span across both columns */
+    order: -1;
+    grid-column: 1 / -1;
     border-bottom: 1px solid var(--blueBorder);
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .box:nth-child(3) .heading {
     text-align: center;
+  }
+
+  .link {
+    position: relative;
   }
 }
 
@@ -141,7 +178,25 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .link {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
   .readBox {
     position: relative;
+  }
+
+  .box:nth-child(1) {
+    order: 2;
+  }
+  .box:nth-child(1) .heading {
+    border: 1px solid var(--blue);
   }
 }
