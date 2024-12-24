@@ -210,4 +210,8 @@
     display: grid;
     width: 100%;
   }
+
+  .headingii {
+    text-align: center;
+  }
 }

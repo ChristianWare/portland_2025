@@ -5,6 +5,7 @@ import ChrisWare from "../../../public/images/author.png";
 import ContactForm from "../ContactForm/ContactForm";
 import TopNav from "../TopNav/TopNav";
 import Link from "next/link";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const ContactSection = () => {
   return (
@@ -19,7 +20,10 @@ const ContactSection = () => {
             </h2>
           </LayoutWrapper>
         </div>
-        <div className={styles.bottom} id='contact'>
+        <div id='contact'>
+          <SectionTitle title='Contanct Me' />
+        </div>
+        <div className={styles.bottom}>
           <div className={styles.bottomLeft}>
             <h3 className={styles.sectionHeading}>More details</h3>
             <p className={styles.copy}>

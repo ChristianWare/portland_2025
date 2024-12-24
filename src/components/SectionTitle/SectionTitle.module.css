@@ -16,8 +16,9 @@
 
 .sectionTitle {
   color: var(--blue);
-  font-size: 1.8rem;
-  font-family: var(--GTAmericaMonoRegular);
+  font-size: 3rem;
+  font-family: var(--barlowCondensed);
+  font-weight: 600;
   text-transform: uppercase;
   background-color: var(--tan);
   padding: 1rem;
