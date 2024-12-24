@@ -4,7 +4,7 @@ import styles from "./ProjectSection.module.css";
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Chuxly from "../../../public/images/chuxly.jpg";
-import FNF from "../../../public/images/fontsandfooters.png";
+import FNF from "../../../public/images/posthero.png";
 import Honey from "../../../public/images/honey.png";
 import Nier from "../../../public/images/nier.png";
 import Taco from "../../../public/images/taco.webp";
@@ -35,17 +35,13 @@ const data: ProjectItem[] = [
   {
     name: "Taco Bell",
     src: Taco,
-    link: "https://www.livemas.dev",
+    link: "https://www.newtacobell.com/",
   },
   {
     name: "Nier Transportation",
     src: Nier,
     link: "https://www.niertransportation.com",
   },
-  // {
-  //   name: "Portfolio Website",
-  //   src: Chuxly,
-  // },
 ];
 
 const ProjectSection = () => {

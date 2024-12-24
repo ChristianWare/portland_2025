@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Chuxly from "../../../public/images/chuxly.jpg";
-import FNF from "../../../public/images/fontsandfooters.png";
+import FNF from "../../../public/images/bookingii.png";
 import Honey from "../../../public/images/honey.png";
 import Nier from "../../../public/images/nier.png";
 import Taco from "../../../public/images/taco.webp";
@@ -46,7 +46,7 @@ const projects = [
     year: 2024,
     framework: "Next.js with Sanity.io",
     src: Taco,
-    link: "https://www.livemas.dev",
+    link: "https://www.newtacobell.com/",
     description:
       "Taco Bell's redesigned website integrates a seamless user experience with a robust CMS powered by Sanity.io, showcasing the full menu and promotional offers in a visually engaging way.",
   },
@@ -89,14 +89,16 @@ const PostHero = () => {
           </div>
           <div className={styles.box}>
             <h2 className={styles.heading}>Project Name: {x.name}</h2>
-            <div className={styles.imgContainer}>
-              <Image
-                src={x.src}
-                fill
-                alt='image'
-                title='image'
-                className={styles.img}
-              />
+            <div className={styles.imgParent}>
+              <div className={styles.imgContainer}>
+                <Image
+                  src={x.src}
+                  fill
+                  alt='image'
+                  title='image'
+                  className={styles.img}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -122,6 +122,11 @@
   color: var(--tan);
 }
 
+.imgParent {
+  padding: 2rem;
+  width: 100%;
+}
+
 .imgContainer {
   position: relative;
   width: 100%;
@@ -129,8 +134,9 @@
 }
 
 .img {
-  padding: 2rem;
+  /* padding: 2rem; */
   object-fit: cover;
+  border: 1px solid var(--blue);
 }
 
 @media screen and (max-width: 968px) {
@@ -198,5 +204,9 @@
   }
   .box:nth-child(1) .heading {
     border: 1px solid var(--blue);
+  }
+
+  .imgContainer {
+    height: 300px;
   }
 }
