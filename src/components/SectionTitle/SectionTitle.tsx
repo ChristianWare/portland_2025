@@ -7,7 +7,7 @@ interface Props {
 const SectionTitle = ({ title }: Props) => {
   return (
     <div className={styles.top}>
-      <span className={styles.sectionTitle}>{title}</span>
+      <div className={styles.sectionTitle}>{title}</div>
     </div>
   );
 };

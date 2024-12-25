@@ -71,19 +71,20 @@ function Nav() {
             ))}
           </ul>
         </div>
-
-        <span
-          className={
-            isOpen === false
-              ? styles.hamburger
-              : `${styles.hamburger} ${styles.active}`
-          }
-          onClick={openMenu}
-        >
-          <span className={styles.whiteBar}></span>
-          <span className={styles.whiteBar}></span>
-          <span className={styles.whiteBar}></span>
-        </span>
+        <div className={styles.hamburgerParent}>
+          <div
+            className={
+              isOpen === false
+                ? styles.hamburger
+                : `${styles.hamburger} ${styles.active}`
+            }
+            onClick={openMenu}
+          >
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+          </div>
+        </div>
       </nav>
     </header>
   );

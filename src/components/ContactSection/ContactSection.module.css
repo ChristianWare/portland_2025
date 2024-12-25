@@ -25,7 +25,10 @@
 
 .heading {
   padding: 2rem;
-  font-size: 5rem;
+  font-size: 3rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
   text-indent: 4em;
   letter-spacing: -0.7px;
@@ -166,6 +169,7 @@
 @media screen and (max-width: 768px) {
   .heading {
     text-indent: 0em;
+    width: 100%;
   }
 
   .copy {

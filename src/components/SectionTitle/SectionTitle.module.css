@@ -1,18 +1,17 @@
 .top {
-  /* background-image: repeating-linear-gradient(
-    45deg,
-    var(--blue),
-    var(--tan) 1px,
-    transparent 0,
-    transparent 50%
-  );
-  background-size: 6px 6px; */
   background-color: var(--tan);
   text-align: center;
   border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
   margin-bottom: 5rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  z-index: 0;
 }
+
 
 .sectionTitle {
   color: var(--blue);
@@ -23,4 +22,27 @@
   background-color: var(--tan);
   padding: 1rem;
   border: 1px solid var(--blue);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTitle::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  border: 1px solid var(--tan);
+  z-index: -1;
+}
+
+@media screen and (max-width: 568px) {
+  .sectionTitle::after {
+    top: 7px;
+    left: 7px;
+  }
 }
