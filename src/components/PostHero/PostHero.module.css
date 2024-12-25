@@ -1,8 +1,5 @@
 .container {
   padding-bottom: 20rem;
-}
-
-.top {
   background-image: repeating-linear-gradient(
     45deg,
     var(--blue),
@@ -11,10 +8,6 @@
     transparent 50%
   );
   background-size: 6px 6px;
-  text-align: center;
-  border-top: 1px solid var(--blueBorder);
-  border-bottom: 1px solid var(--blueBorder);
-  margin-bottom: 5rem;
 }
 
 .sectionTitle {
@@ -27,8 +20,7 @@
   border: 1px solid var(--blue);
 }
 
-.content,
-.topContent {
+.content {
   border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
   display: grid;
@@ -39,16 +31,10 @@
   margin-bottom: 15rem;
 }
 
-.mainHeading {
-  font-size: 3rem;
-  padding: 1.5rem;
-  text-transform: uppercase;
-  border-right: 1px solid var(--blueBorder);
-}
-
 .box {
   border-right: 1px solid var(--blueBorder);
   position: relative;
+  background-color: var(--tan);
 }
 
 .heading {
@@ -56,11 +42,18 @@
   padding: 1.5rem;
   border-bottom: 1px solid var(--blueBorder);
   width: 100%;
+  background-color: var(--blue);
+  color: var(--tan);
+  border-right: 1px solid var(--tan);
 }
 
 .title {
   font-family: var(--GTAmericaMonoRegular);
+  background-color: var(--tan);
+  padding: 1rem;
+  margin: 1rem;
   letter-spacing: -1px;
+  font-size: 1.4rem;
 }
 
 .listBox {
@@ -70,24 +63,22 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 0.8rem;
+  gap: 1rem;
+  background-color: var(--tan);
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .listItem {
   color: var(--blue);
   font-family: var(--GTAmericaMonoRegular);
-  font-size: 1.6rem;
-  cursor: pointer;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: -0.2px;
-}
-
-.listItem:hover {
-  text-decoration: underline;
 }
 
 .link {
-  font-family: var(--GTAmericaMonoRegular);
+  font-family: var(--barlowCondensed);
+  font-size: 2.5rem;
   color: var(--tan);
   text-transform: uppercase;
   display: flex;
@@ -99,8 +90,10 @@
   left: 0;
   padding: 2rem;
   background-color: var(--blue);
-  width: 100%;
   border: 1px solid var(--blue);
+  border-right: none;
+  border-bottom: none;
+  width: 100%;
   transition: all 0.2s ease-in;
   letter-spacing: -0.5px;
 }

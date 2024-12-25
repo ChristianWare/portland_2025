@@ -1,10 +1,26 @@
 .container {
   border-top: 1px solid var(--blueBorder);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--blue),
+    var(--tan) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 6px 6px;
 }
 
 .top {
   padding-bottom: 2rem;
   width: 100%;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--blue),
+    var(--tan) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 6px 6px;
 }
 
 .heading {
@@ -15,6 +31,10 @@
   letter-spacing: -0.7px;
   line-height: 1.1;
   font-weight: 600;
+  background-color: var(--tan);
+  border: 1px solid var(--blue);
+  padding: 1rem 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .bottom {
@@ -23,11 +43,13 @@
   width: 100%;
   border-top: 1px solid var(--blueBorder);
   border-bottom: 1px solid var(--blueBorder);
+  background-color: var(--tan);
 }
 
 .sectionHeading,
 .sectionHeadingii {
   text-transform: uppercase;
+  font-weight: 600;
   font-size: 1.8rem;
   line-height: 1;
   letter-spacing: 0.5px;
@@ -35,6 +57,9 @@
   padding: 1.5rem 2rem;
   border-bottom: 1px solid var(--blueBorder);
   width: 100%;
+  color: var(--tan);
+  border-right: 1px solid var(--tan);
+  background-color: var(--blue);
 }
 
 .bottomLeft,

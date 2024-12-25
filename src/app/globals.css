@@ -161,9 +161,9 @@ section {
     font-size: 50%;
   }
 
-  h1 {
+  /* h1 {
     font-size: 17vw;
-  }
+  } */
   p {
     hyphens: auto;
   }

@@ -45,7 +45,9 @@ const Process = () => {
       <div className={styles.bottom}>
         {data.map((x) => (
           <div key={x.id} className={styles.card}>
-            <span className={styles.index}>{x.id}</span>
+            <div className={styles.indexContainer}>
+              <span className={styles.index}>{x.id}</span>
+            </div>
             <div>
               <h3 className={styles.feature}>{x.feature}</h3>
               <p className={styles.desc}>{x.desc}</p>

@@ -73,7 +73,6 @@ const PostHero = () => {
             <ul className={styles.listBox}>
               <li className={styles.listItem}>Name: {x.name}</li>
               <li className={styles.listItem}>Year: {x.year}</li>
-
               <li className={styles.listItem}>Framework: {x.framework}</li>
             </ul>
             <Link href={x.link} target='_blank' className={styles.link}>
@@ -83,9 +82,7 @@ const PostHero = () => {
           </div>
           <div className={styles.box}>
             <h2 className={styles.heading}>Description</h2>
-            <div className={styles.listBox}>
-              <p className={styles.title}>{x.description}</p>
-            </div>
+            <p className={styles.title}>{x.description}</p>
           </div>
           <div className={styles.box}>
             <h2 className={styles.heading}>Project Name: {x.name}</h2>

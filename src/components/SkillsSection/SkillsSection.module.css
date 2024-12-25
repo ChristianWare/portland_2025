@@ -1,17 +1,13 @@
 .container {
   padding-bottom: 20rem;
-}
-
-.sectionTitle {
-  color: var(--blue);
-  text-align: center;
-  font-size: 1.8rem;
-  font-family: var(--GTAmericaMonoRegular);
-  text-transform: uppercase;
-  border-top: 1px solid var(--blueBorder);
-  border-bottom: 1px solid var(--blueBorder);
-  padding: 2rem;
-  display: block;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--blue),
+    var(--tan) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 6px 6px;
 }
 
 .content {
@@ -34,9 +30,11 @@
 .name {
   font-size: 2rem;
   color: var(--blue);
+  background-color: var(--tan);
   font-family: var(--GTAmericaMonoRegular);
   text-transform: uppercase;
   border-bottom: 1px solid var(--blueBorder);
+  border-right: 1px solid var(--tan);
   cursor: pointer;
   padding: 1rem 2rem;
   transition: all 0.2s ease-in;
@@ -61,12 +59,13 @@
   align-items: center;
   padding: 2rem;
   min-height: 200px;
+  background-color: var(--blue);
 }
 
 .icon {
   width: 200px;
   height: 200px;
-  color: var(--blue);
+  color: var(--tan);
   transition: all 0.3s ease-in;
 }
 

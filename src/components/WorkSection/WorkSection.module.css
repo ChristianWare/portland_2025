@@ -1,11 +1,24 @@
+.container {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--blue),
+    var(--tan) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 6px 6px;
+}
+
 .top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--blue);
+  background-color: var(--tan);
 }
 
 .sectionTitle {
-  color: var(--blue);
+  color: var(--tan);
+  background-color: var(--blue);
   font-size: 1.8rem;
   font-family: var(--GTAmericaMonoRegular);
   text-transform: uppercase;
@@ -28,6 +41,7 @@
   align-items: flex-start;
   justify-content: space-between;
   height: 100%;
+  background-color: var(--tan);
 }
 
 .copy {
@@ -79,6 +93,7 @@
 .name {
   font-size: 2rem;
   color: var(--blue);
+  background-color: var(--tan);
   font-family: var(--GTAmericaMonoRegular);
   text-transform: uppercase;
   padding: 2rem;

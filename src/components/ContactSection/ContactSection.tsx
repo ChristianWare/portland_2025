@@ -20,7 +20,7 @@ const ContactSection = () => {
             </h2>
           </LayoutWrapper>
         </div>
-        <div id='contact'>
+        <div id='contact' className={styles.sectionTitle}>
           <SectionTitle title='Contanct Me' />
         </div>
         <div className={styles.bottom}>
