@@ -18,6 +18,7 @@ const projects = [
     framework: "Next.js",
     src: Chuxly,
     link: "https://www.chuxly.com/",
+    github: "https://github.com/ChristianWare/claro15",
     description:
       "Chuxly is an e-commerce website offering wireless, portable, and home theater speakers, along with headphones, components, and accessories.",
   },
@@ -28,6 +29,7 @@ const projects = [
     framework: "Next.js",
     src: FNF,
     link: "https://www.fontsandfooters.com/",
+    github: "https://github.com/ChristianWare/fnfii.15",
     description:
       "Fonts & Footers is a web development agency specializing in creating fully functional e-commerce websites for small business owners, tailored to meet their unique needs.",
   },
@@ -38,6 +40,7 @@ const projects = [
     framework: "Next.js",
     src: Honey,
     link: "https://www.goldendrips.com/",
+    github: "https://github.com/ChristianWare/honey",
     description:
       "Golden Drips is an e-commerce website dedicated to selling high-quality honey products across Arizona. The platform supports state-wide delivery with an easy-to-navigate user interface.",
   },
@@ -48,6 +51,7 @@ const projects = [
     framework: "Next.js with Sanity.io",
     src: Taco,
     link: "https://www.newtacobell.com/",
+    github: "https://github.com/ChristianWare/Tacobell-ii",
     description:
       "Taco Bell's redesigned website integrates a seamless user experience with a robust CMS powered by Sanity.io, showcasing the full menu and promotional offers in a visually engaging way.",
   },
@@ -58,6 +62,7 @@ const projects = [
     framework: "Next.js",
     src: Nier,
     link: "https://www.niertransportation.com",
+    github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
     description:
       "Nier Transportation's website highlights a luxury black car service with features that make booking and navigation effortless for clients seeking reliable and premium transportation services.",
   },
@@ -89,7 +94,7 @@ const PostHero = () => {
                 <h2 className={styles.heading}>Description</h2>
                 <p className={styles.title}>{x.description}</p>
               </div>
-              <Link href={x.link} target='_blank' className={styles.linkii}>
+              <Link href={x.github} target='_blank' className={styles.linkii}>
                 Github Code
                 <RightArrow className={styles.iconii} />
               </Link>
