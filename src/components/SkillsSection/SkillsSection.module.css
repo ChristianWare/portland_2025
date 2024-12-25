@@ -71,6 +71,14 @@
   color: var(--blue);
 }
 
+@media screen and (max-width: 1068px) {
+  .name, .name:hover {
+    user-select: none;
+        cursor: default;
+
+  }
+}
+
 @media screen and (max-width: 568px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
