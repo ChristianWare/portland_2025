@@ -3,9 +3,9 @@ import styles from "./Hero.module.css";
 const Hero = () => {
   return (
     <section className={styles.container}>
-      <p className={styles.copy}>
+      <div className={styles.copy}>
         Web Developer
-      </p>
+      </div>
       <h1 className={styles.heading}>CHRISTIAN WARE</h1>
     </section>
   );

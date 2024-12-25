@@ -9,10 +9,13 @@
   background-size: 6px 6px;
 }
 
+.content {
+  border: 1px solid var(--blue);
+}
+
 .top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--blue);
   background-color: var(--tan);
 }
 
@@ -47,7 +50,7 @@
 .copy {
   padding: 2rem;
   font-size: 1.6rem;
-  letter-spacing: -0.7px;
+  letter-spacing: -1px;
 }
 
 .resumeContainer {
@@ -112,6 +115,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+
   .sectionTitle {
     text-align: center;
   }
@@ -125,5 +129,9 @@
 
   .copy {
     text-align: center;
+  }
+
+  .resumeContainer {
+    margin-bottom: 5rem;
   }
 }

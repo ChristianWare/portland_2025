@@ -1,4 +1,5 @@
 // import LayoutWrapper from "../LayoutWrapper";
+import LayoutWrapper from "../LayoutWrapper";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import styles from "./Process.module.css";
 
@@ -29,32 +30,31 @@ const Process = () => {
   return (
     <section className={styles.container}>
       <SectionTitle title='My Process' />
-      <div className={styles.top}>
-        <div className={styles.topRight}></div>
-      </div>
-      <div className={styles.middle}>
-        <div className={styles.middleLeft}>
-          <span className={styles.sectionTitle}>How I work</span>
-        </div>
-        <h2 className={styles.heading}>
-          By taking a holistic approach to web development, I provide clients
-          with personalized solutions, ongoing support, and actionable insights
-          to ensure their success extends far beyond the launch.
-        </h2>
-      </div>
-      <div className={styles.bottom}>
-        {data.map((x) => (
-          <div key={x.id} className={styles.card}>
-            <div className={styles.indexContainer}>
-              <span className={styles.index}>{x.id}</span>
-            </div>
-            <div>
-              <h3 className={styles.feature}>{x.feature}</h3>
-              <p className={styles.desc}>{x.desc}</p>
-            </div>
+      <LayoutWrapper>
+        <div className={styles.middle}>
+          <div className={styles.middleLeft}>
+            <span className={styles.sectionTitle}>How I work</span>
           </div>
-        ))}
-      </div>
+          <h2 className={styles.heading}>
+            By taking a holistic approach to web development, I provide clients
+            with personalized solutions, ongoing support, and actionable
+            insights to ensure their success extends far beyond the launch.
+          </h2>
+        </div>
+        <div className={styles.bottom}>
+          {data.map((x) => (
+            <div key={x.id} className={styles.card}>
+              <div className={styles.indexContainer}>
+                <span className={styles.index}>{x.id}</span>
+              </div>
+              <div>
+                <h3 className={styles.feature}>{x.feature}</h3>
+                <p className={styles.desc}>{x.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </LayoutWrapper>
     </section>
   );
 };

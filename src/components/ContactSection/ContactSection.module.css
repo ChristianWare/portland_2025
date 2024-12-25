@@ -1,18 +1,4 @@
 .container {
-  border-top: 1px solid var(--blueBorder);
-  background-image: repeating-linear-gradient(
-    45deg,
-    var(--blue),
-    var(--tan) 1px,
-    transparent 0,
-    transparent 50%
-  );
-  background-size: 6px 6px;
-}
-
-.top {
-  padding-bottom: 2rem;
-  width: 100%;
   background-image: repeating-linear-gradient(
     45deg,
     var(--blue),
@@ -27,9 +13,10 @@
   padding: 2rem;
   font-size: 3rem;
   width: 60%;
+  margin-top: 10rem;
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-indent: 4em;
   letter-spacing: -0.7px;
   line-height: 1.1;
@@ -44,8 +31,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  border-top: 1px solid var(--blueBorder);
-  border-bottom: 1px solid var(--blueBorder);
+  border: 1px solid var(--blueBorder);
   background-color: var(--tan);
 }
 
@@ -63,6 +49,10 @@
   color: var(--tan);
   border-right: 1px solid var(--tan);
   background-color: var(--blue);
+}
+
+.sectionHeadingii {
+  border-right: none;
 }
 
 .bottomLeft,
@@ -107,12 +97,17 @@
   border-right: 1px solid var(--blueBorder);
 }
 
-.addressBox {
+.addressBox,
+.addressBoxLocation {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+}
+
+.addressBoxLocation {
+  padding: 2rem;
 }
 
 .address {
@@ -145,7 +140,7 @@
   border: 1px solid var(--blue);
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -153,6 +148,7 @@
   .sectionHeading,
   .sectionHeadingii {
     text-align: center;
+    border-right: none;
   }
 
   .sectionHeadingii {

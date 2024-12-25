@@ -8,6 +8,7 @@ import FNF from "../../../public/images/bookingii.png";
 import Honey from "../../../public/images/honey.png";
 import Nier from "../../../public/images/nier.png";
 import Taco from "../../../public/images/taco.webp";
+import LayoutWrapper from "../LayoutWrapper";
 
 const projects = [
   {
@@ -66,40 +67,50 @@ const PostHero = () => {
   return (
     <section className={styles.container} id='projects'>
       <SectionTitle title='Recent Projects' />
-      {projects.map((x) => (
-        <div className={styles.content} key={x.id}>
-          <div className={styles.box}>
-            <h2 className={styles.heading}>Details</h2>
-            <ul className={styles.listBox}>
-              <li className={styles.listItem}>Name: {x.name}</li>
-              <li className={styles.listItem}>Year: {x.year}</li>
-              <li className={styles.listItem}>Framework: {x.framework}</li>
-            </ul>
-            <Link href={x.link} target='_blank' className={styles.link}>
-              Live Site
-              <RightArrow className={styles.icon} />
-            </Link>
-          </div>
-          <div className={styles.box}>
-            <h2 className={styles.heading}>Description</h2>
-            <p className={styles.title}>{x.description}</p>
-          </div>
-          <div className={styles.box}>
-            <h2 className={styles.heading}>Project Name: {x.name}</h2>
-            <div className={styles.imgParent}>
-              <div className={styles.imgContainer}>
-                <Image
-                  src={x.src}
-                  fill
-                  alt='image'
-                  title='image'
-                  className={styles.img}
-                />
+      <LayoutWrapper>
+        {projects.map((x) => (
+          <div className={styles.content} key={x.id}>
+            <div className={styles.box}>
+              <div className={styles.boxTop}>
+                <h2 className={styles.heading}>Details</h2>
+                <ul className={styles.listBox}>
+                  <li className={styles.listItem}>Name: {x.name}</li>
+                  <li className={styles.listItem}>Year: {x.year}</li>
+                  <li className={styles.listItem}>Framework: {x.framework}</li>
+                </ul>
+              </div>
+              <Link href={x.link} target='_blank' className={styles.link}>
+                Live Site
+                <RightArrow className={styles.icon} />
+              </Link>
+            </div>
+            <div className={styles.box}>
+              <div className={styles.boxTop}>
+                <h2 className={styles.heading}>Description</h2>
+                <p className={styles.title}>{x.description}</p>
+              </div>
+              <Link href={x.link} target='_blank' className={styles.linkii}>
+                Github Code
+                <RightArrow className={styles.iconii} />
+              </Link>
+            </div>
+            <div className={styles.box}>
+              <h2 className={styles.heading}>Project Name: {x.name}</h2>
+              <div className={styles.imgParent}>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src={x.src}
+                    fill
+                    alt='image'
+                    title='image'
+                    className={styles.img}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </LayoutWrapper>
     </section>
   );
 };

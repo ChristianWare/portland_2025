@@ -21,6 +21,7 @@ import Contentful from "../../../public/icons/contentful.svg";
 import Docker from "../../../public/icons/docker.svg";
 import WordPress from "../../../public/icons/wordpress.svg";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import LayoutWrapper from "../LayoutWrapper";
 
 const data = [
   {
@@ -103,7 +104,7 @@ const SkillsSection = () => {
     if (isPaused) return;
     const interval = setInterval(() => {
       setCurrentIconIndex((prevIndex) => (prevIndex + 1) % data.length);
-    }, 200);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [isPaused]);
@@ -116,25 +117,27 @@ const SkillsSection = () => {
   return (
     <section className={styles.container}>
       <SectionTitle title='Skills' />
-      <div className={styles.content}>
-        <div className={styles.left}>
-          <ul className={styles.list}>
-            {data.map((item, index) => (
-              <li
-                key={index}
-                className={styles.name}
-                onMouseEnter={() => handleHover(item.icon)}
-                onMouseLeave={() => handleHover(null)}
-              >
-                {index + 1}. {item.name}
-              </li>
-            ))}
-          </ul>
+      <LayoutWrapper>
+        <div className={styles.content}>
+          <div className={styles.left}>
+            <ul className={styles.list}>
+              {data.map((item, index) => (
+                <li
+                  key={index}
+                  className={styles.name}
+                  onMouseEnter={() => handleHover(item.icon)}
+                  onMouseLeave={() => handleHover(null)}
+                >
+                  {index + 1}. {item.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.right}>
+            {isPaused && activeIcon ? activeIcon : data[currentIconIndex].icon}
+          </div>
         </div>
-        <div className={styles.right}>
-          {isPaused && activeIcon ? activeIcon : data[currentIconIndex].icon}
-        </div>
-      </div>
+      </LayoutWrapper>
     </section>
   );
 };

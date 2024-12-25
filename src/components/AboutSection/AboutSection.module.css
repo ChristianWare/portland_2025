@@ -19,7 +19,7 @@
 
 .heading {
   font-size: 3rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   width: 60%;
   margin-left: auto;
   margin-right: auto;
