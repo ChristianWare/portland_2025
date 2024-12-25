@@ -51,7 +51,7 @@ span {
 h1 {
   font-size: 12vw;
   line-height: 0.85;
-  letter-spacing: -6px;
+  letter-spacing: -3px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
@@ -161,9 +161,9 @@ section {
     font-size: 50%;
   }
 
-  /* h1 {
+  h1 {
     font-size: 17vw;
-  } */
+  }
   p {
     hyphens: auto;
   }
