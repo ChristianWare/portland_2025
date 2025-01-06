@@ -3,6 +3,7 @@ import RightArrow from "../../../public/icons/righArrow.svg";
 import Image from "next/image";
 import Link from "next/link";
 import FNF from "../../../public/images/fontsandfooters.png";
+import LayoutWrapper from "../LayoutWrapper";
 
 const data = [
   {
@@ -22,41 +23,42 @@ const data = [
 const PostHeroii = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
-        <div className={styles.box}>
-          <h2 className={styles.heading}>Preview</h2>
-          <div className={styles.listBox}>
-            <div className={styles.imgContainer}>
-              <Image
-                src={FNF}
-                fill
-                alt='image'
-                title='image'
-                className={styles.img}
-              />
+      <LayoutWrapper>
+        <div className={styles.content}>
+          <div className={styles.box}>
+            <h2 className={styles.heading}>Preview</h2>
+            <div className={styles.listBox}>
+              <div className={styles.imgContainer}>
+                <Image
+                  src={FNF}
+                  fill
+                  alt='image'
+                  title='image'
+                  className={styles.img}
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.box}>
-          <h2 className={styles.heading}>Description</h2>
-          <div className={styles.listBox}>
-            <h3 className={styles.title}>
-              Fonts & Footers is a web development agency that focuses on
-              building fully functional e-commerce websites for small business
-              owners.
-            </h3>
+          <div className={styles.box}>
+            <h2 className={styles.heading}>Description</h2>
+            <div className={styles.listBox}>
+              <h3 className={styles.title}>
+                Fonts & Footers is a web development agency that focuses on
+                building fully functional e-commerce websites for small business
+                owners.
+              </h3>
+            </div>
           </div>
-        </div>
-        <div className={styles.box}>
-          <h2 className={styles.heading}>Details</h2>
-          <ul className={styles.listBox}>
-            {data.map((x) => (
-              <li key={x.id} className={styles.listItem}>
-                {x.title}
-              </li>
-            ))}
-          </ul>
-          {/* <div className={styles.readBox}>
+          <div className={styles.box}>
+            <h2 className={styles.heading}>Details</h2>
+            <ul className={styles.listBox}>
+              {data.map((x) => (
+                <li key={x.id} className={styles.listItem}>
+                  {x.title}
+                </li>
+              ))}
+            </ul>
+            {/* <div className={styles.readBox}>
               <RightArrow className={styles.icon} />
              
               <Link
@@ -67,16 +69,17 @@ const PostHeroii = () => {
                 Live Site
               </Link>
             </div> */}
-          <Link
-            href='https://www.fontsandfooters.com/'
-            target='_blank'
-            className={styles.link}
-          >
-            Live Site
-            <RightArrow className={styles.icon} />
-          </Link>
+            <Link
+              href='https://www.fontsandfooters.com/'
+              target='_blank'
+              className={styles.link}
+            >
+              Live Site
+              <RightArrow className={styles.icon} />
+            </Link>
+          </div>
         </div>
-      </div>
+      </LayoutWrapper>
     </section>
   );
 };

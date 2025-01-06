@@ -1,4 +1,3 @@
-// import LayoutWrapper from "../LayoutWrapper";
 import LayoutWrapper from "../LayoutWrapper";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import styles from "./Process.module.css";

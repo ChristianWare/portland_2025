@@ -1,4 +1,4 @@
-.container {
+/* .container {
   border-top: 1px solid var(--lightBlack);
   background-image: repeating-linear-gradient(
     45deg,
@@ -8,7 +8,7 @@
     transparent 50%
   );
   background-size: 6px 6px;
-}
+} */
 
 .topLeft {
   grid-column: span 1;
@@ -72,6 +72,10 @@
   position: relative;
   border-right: 1px solid var(--blueBorder);
   background-color: var(--tan);
+}
+
+.card:nth-child(1) {
+  border-left: 1px solid var(--blue);
 }
 
 .card:nth-child(4) {

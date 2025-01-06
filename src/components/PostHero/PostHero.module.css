@@ -1,4 +1,4 @@
-.container {
+/* .container {
   background-image: repeating-linear-gradient(
     45deg,
     var(--blue),
@@ -7,7 +7,7 @@
     transparent 50%
   );
   background-size: 6px 6px;
-}
+} */
 
 .sectionTitle {
   color: var(--blue);
